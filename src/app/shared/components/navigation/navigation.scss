@@ -1,0 +1,162 @@
+.custom-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  padding-right: 2rem;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+
+  .nav-item:hover & {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .nav-item.active & {
+    color: #ffffff;
+  }
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.nav-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+// Hamburger Menu Styles
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hamburger-icon {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+
+  .hamburger:hover & {
+    color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+// Mobile Menu
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 1rem;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-item {
+    margin: 0.25rem 0.5rem;
+  }
+
+  .nav-label {
+    display: block;
+    margin-left: 0.75rem;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .custom-navigation {
+    width: calc(100% - 15px);
+    padding: 0 1rem 0 0;
+  }
+
+  .nav-container {
+    padding-right: 1rem;
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 2rem 0;
+    gap: 0;
+  }
+}
