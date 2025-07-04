@@ -3,21 +3,20 @@ import type { Engine } from "@tsparticles/engine";
 import { loadBasic } from "@tsparticles/basic";
 import { particlesOptions } from '../../../shared/options/particlesOptions';
 import { NgxParticlesModule } from "@tsparticles/angular";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home-page',
   imports: [
-    NgxParticlesModule
+    NgxParticlesModule,
+    TranslatePipe
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss'
 })
 export class HomePage implements OnInit {
-
   id = 'tsparticles';
   particlesOptions = particlesOptions;
-
-  constructor() {}
 
   ngOnInit(): void {
     // Initialization logic if needed

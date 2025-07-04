@@ -1,8 +1,11 @@
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
+import { TranslationService } from '../../services/translation.service';
 
 interface NavItem {
   label: string;
+  translationKey: string;
   icon: string;
   command: () => void;
 }
@@ -10,42 +13,53 @@ interface NavItem {
 @Component({
   selector: 'app-navigation',
   imports: [
-    CommonModule
+    CommonModule,
+    TranslatePipe
   ],
   templateUrl: './navigation.html',
   styleUrl: './navigation.scss'
 })
 export class Navigation implements OnInit, OnDestroy {
+  private readonly _translationService = inject(TranslationService);
+
   items: NavItem[] = [];
   activeIndex: number = 0;
   isMobileMenuOpen: boolean = false;
+  currentLanguage: string = 'en';
   private observer: IntersectionObserver | null = null;
   private sectionIds = ['home', 'about', 'projects', 'skills', 'contact'];
 
   ngOnInit() {
+    this.currentLanguage = this._translationService.getCurrentLanguage();
+
     this.items = [
       {
         label: 'Home',
+        translationKey: 'navigation.home',
         icon: 'pi pi-home',
         command: () => this.scrollTo('home')
       },
       {
         label: 'About',
+        translationKey: 'navigation.about',
         icon: 'pi pi-user',
         command: () => this.scrollTo('about')
       },
       {
         label: 'Projects',
+        translationKey: 'navigation.projects',
         icon: 'pi pi-briefcase',
         command: () => this.scrollTo('projects')
       },
       {
         label: 'Skills',
+        translationKey: 'navigation.skills',
         icon: 'pi pi-cog',
         command: () => this.scrollTo('skills')
       },
       {
         label: 'Contact',
+        translationKey: 'navigation.contact',
         icon: 'pi pi-envelope',
         command: () => this.scrollTo('contact')
       }
@@ -105,5 +119,14 @@ export class Navigation implements OnInit, OnDestroy {
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  switchLanguage(language: string) {
+    this._translationService.setLanguage(language);
+    this.currentLanguage = language;
+  }
+
+  getSupportedLanguages() {
+    return this._translationService.getSupportedLanguages();
   }
 }

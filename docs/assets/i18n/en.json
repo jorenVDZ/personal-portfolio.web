@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "I'm a passionate developer"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Learn more about my background and experience"
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "Technologies and tools I work with"
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Check out my latest work"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Get in touch with me"
+  }
+}

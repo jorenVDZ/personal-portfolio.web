@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "home": "Startpagina",
+    "about": "Over mij",
+    "skills": "Vaardigheden",
+    "projects": "Projecten",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welkom bij mijn Portfolio",
+    "subtitle": "Ik ben een gepassioneerde ontwikkelaar"
+  },
+  "about": {
+    "title": "Over mij",
+    "description": "Leer meer over mijn achtergrond en ervaring"
+  },
+  "skills": {
+    "title": "Mijn vaardigheden",
+    "description": "Technologieën en tools waarmee ik werk"
+  },
+  "projects": {
+    "title": "Mijn projecten",
+    "description": "Bekijk mijn nieuwste werk"
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "description": "Neem contact met me op"
+  }
+}

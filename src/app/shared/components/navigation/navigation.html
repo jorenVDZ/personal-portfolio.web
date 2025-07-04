@@ -5,6 +5,16 @@
       <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'" class="hamburger-icon"></i>
     </button>
 
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button
+        *ngFor="let lang of getSupportedLanguages()"
+        [class]="'lang-btn ' + (currentLanguage === lang ? 'active' : '')"
+        (click)="switchLanguage(lang)">
+        {{ lang.toUpperCase() }}
+      </button>
+    </div>
+
     <!-- Desktop Menu -->
     <ul class="nav-menu desktop-menu">
       <li class="nav-item" *ngFor="let item of items; let i = index"
@@ -12,7 +22,7 @@
           (click)="selectItem(item, i)">
         <a class="nav-link">
           <i [class]="item.icon" class="nav-icon"></i>
-          <span class="nav-label">{{ item.label }}</span>
+          <span class="nav-label">{{ item.translationKey | translate }}</span>
         </a>
       </li>
     </ul>
@@ -24,7 +34,7 @@
           (click)="selectItem(item, i)">
         <a class="nav-link">
           <i [class]="item.icon" class="nav-icon"></i>
-          <span class="nav-label">{{ item.label }}</span>
+          <span class="nav-label">{{ item.translationKey | translate }}</span>
         </a>
       </li>
     </ul>
