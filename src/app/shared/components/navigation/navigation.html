@@ -1,10 +1,5 @@
 <nav class="custom-navigation">
   <div class="nav-container">
-    <!-- Hamburger Menu Button (Mobile Only) -->
-    <button class="hamburger" (click)="toggleMobileMenu()">
-      <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'" class="hamburger-icon"></i>
-    </button>
-
     <!-- Language Switcher -->
     <div class="language-switcher">
       <button
@@ -14,6 +9,12 @@
         {{ lang.toUpperCase() }}
       </button>
     </div>
+
+    <!-- Hamburger Menu Button (Mobile Only) -->
+    <button class="hamburger" (click)="toggleMobileMenu()">
+      <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'" class="hamburger-icon"></i>
+    </button>
+
 
     <!-- Desktop Menu -->
     <ul class="nav-menu desktop-menu">

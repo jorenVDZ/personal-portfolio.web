@@ -65,7 +65,6 @@ export class Navigation implements OnInit, OnDestroy {
       }
     ];
 
-    // Setup intersection observer after a brief delay to ensure DOM is ready
     setTimeout(() => {
       this.setupIntersectionObserver();
     }, 100);
@@ -80,7 +79,7 @@ export class Navigation implements OnInit, OnDestroy {
   private setupIntersectionObserver() {
     const options = {
       root: null,
-      rootMargin: '-50% 0px -50% 0px', // Trigger when section is 50% visible
+      rootMargin: '-50% 0px -50% 0px',
       threshold: 0
     };
 
@@ -96,7 +95,6 @@ export class Navigation implements OnInit, OnDestroy {
       });
     }, options);
 
-    // Observe all sections
     this.sectionIds.forEach(id => {
       const element = document.getElementById(id);
       if (element) {
