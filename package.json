@@ -8,8 +8,9 @@
     "build:pages": "ng build --configuration github-pages --output-path docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "extract-i18n": "ngx-translate-extract --input ./src --output ./src/assets/i18n/template.json --clean --sort --format json",
-    "extract-i18n:watch": "ngx-translate-extract --input ./src --output ./src/assets/i18n/template.json --clean --sort --format json --watch"
+    "i18n:init": "ngx-translate-extract --input './src/**/*.{ts,html}' --output ./src/assets/i18n/template.json --format json",
+    "i18n:extract": "ngx-translate-extract --input './src/**/*.{ts,html}' --output ./src/assets/i18n/en.json --output ./src/assets/i18n/nl.json --format json",
+    "i18n:clean": "ngx-translate-extract --input './src/**/*.{ts,html}' --output ./src/assets/i18n/en.json --output ./src/assets/i18n/nl.json --clean --format json"
   },
   "prettier": {
     "overrides": [

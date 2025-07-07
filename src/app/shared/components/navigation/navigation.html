@@ -2,12 +2,13 @@
   <div class="nav-container">
     <!-- Language Switcher -->
     <div class="language-switcher">
-      <button
-        *ngFor="let lang of getSupportedLanguages()"
-        [class]="'lang-btn ' + (currentLanguage === lang ? 'active' : '')"
-        (click)="switchLanguage(lang)">
-        {{ lang.toUpperCase() }}
-      </button>
+      <div class="language-toggle">
+        <div class="custom-language-switch" [class.checked]="currentLanguage === 'nl'" (click)="toggleLanguage()">
+          <span class="background-label left">EN</span>
+          <span class="background-label right">NL</span>
+          <div class="switch-slider"></div>
+        </div>
+      </div>
     </div>
 
     <!-- Hamburger Menu Button (Mobile Only) -->

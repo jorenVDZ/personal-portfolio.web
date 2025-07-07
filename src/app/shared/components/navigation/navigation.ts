@@ -124,7 +124,8 @@ export class Navigation implements OnInit, OnDestroy {
     this.currentLanguage = language;
   }
 
-  getSupportedLanguages() {
-    return this._translationService.getSupportedLanguages();
+  toggleLanguage() {
+    const newLanguage = this.currentLanguage === 'en' ? 'nl' : 'en';
+    this.switchLanguage(newLanguage);
   }
 }

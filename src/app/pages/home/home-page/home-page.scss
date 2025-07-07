@@ -29,4 +29,10 @@ ngx-particles {
 
 .text-content {
   text-align: center;
+
+
 }
+
+// :host ::ng-deep .text-content b {
+//   color: var(--p-blue-500);
+// }
