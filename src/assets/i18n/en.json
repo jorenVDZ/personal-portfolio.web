@@ -11,8 +11,12 @@
     "subtitle": "Loves <b>clean code</b>, <b>smooth interfaces</b>, and <b>well-oiled pipelines</b>."
   },
   "about": {
-    "title": "About Me",
-    "description": "Learn more about my background and experience"
+    "title": "About <b>Me</b>",
+    "content": "<p>I studied <b>Applied Information Science</b> at <b>PXL University College</b> and currently work as a <b>full-stack .NET developer</b>, with a strong preference for <b>frontend development</b>. I'm always looking to grow as a developer, and I have a special interest in topics like <b>DevOps</b> and <b>software architecture</b>.</p><p>Something I truly enjoy is <b>mentoring</b>. Whether I'm supporting <b>colleagues</b> or guiding <b>interns</b>, I find it rewarding to share knowledge and help others develop their skills.</p><p>In my free time, I like <b>playing video games</b> and <b>going camping</b>. When I'm outdoors, I really enjoy <b>kayaking</b>, it's a great way to relax and enjoy nature.</p>",
+    "skill1": "Passionate Developer",
+    "skill2": "Creative Problem Solver",
+    "skill3": "Team Collaborator",
+    "skill4": "Continuous Learner"
   },
   "skills": {
     "title": "My Skills",

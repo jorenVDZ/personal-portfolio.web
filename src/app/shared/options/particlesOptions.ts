@@ -8,7 +8,7 @@ export const particlesOptions: ISourceOptions = {
     },
     fpsLimit: 120,
     fullScreen: {
-      enable: false,
+      enable: true,
       zIndex: -1,
     },
     interactivity: {
