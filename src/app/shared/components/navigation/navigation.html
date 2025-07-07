@@ -19,26 +19,38 @@
 
     <!-- Desktop Menu -->
     <ul class="nav-menu desktop-menu">
-      <li class="nav-item" *ngFor="let item of items; let i = index"
-          [class.active]="activeIndex === i"
-          (click)="selectItem(item, i)">
-        <a class="nav-link">
-          <i [class]="item.icon" class="nav-icon"></i>
-          <span class="nav-label">{{ item.translationKey | translate }}</span>
-        </a>
-      </li>
+      @for (item of items; track item.label; let i = $index) {
+        <li class="nav-item"
+            [class.active]="activeIndex === i"
+            (click)="selectItem(item, i)">
+          <a class="nav-link">
+            @if (item.label === 'Skills') {
+              <img src="assets/stats.svg" alt="Stats" class="nav-icon stats-icon">
+            } @else {
+              <i [class]="item.icon" class="nav-icon"></i>
+            }
+            <span class="nav-label">{{ item.translationKey | translate }}</span>
+          </a>
+        </li>
+      }
     </ul>
 
     <!-- Mobile Menu -->
     <ul class="nav-menu mobile-menu" [class.open]="isMobileMenuOpen">
-      <li class="nav-item" *ngFor="let item of items; let i = index"
-          [class.active]="activeIndex === i"
-          (click)="selectItem(item, i)">
-        <a class="nav-link">
-          <i [class]="item.icon" class="nav-icon"></i>
-          <span class="nav-label">{{ item.translationKey | translate }}</span>
-        </a>
-      </li>
+      @for (item of items; track item.label; let i = $index) {
+        <li class="nav-item"
+            [class.active]="activeIndex === i"
+            (click)="selectItem(item, i)">
+          <a class="nav-link">
+            @if (item.label === 'Skills') {
+              <img src="assets/stats.svg" alt="Stats" class="nav-icon stats-icon">
+            } @else {
+              <i [class]="item.icon" class="nav-icon"></i>
+            }
+            <span class="nav-label">{{ item.translationKey | translate }}</span>
+          </a>
+        </li>
+      }
     </ul>
   </div>
 </nav>
