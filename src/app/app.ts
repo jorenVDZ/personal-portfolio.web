@@ -1,4 +1,6 @@
 import { loadBasic } from '@tsparticles/basic';
+import { loadExternalAttractInteraction } from '@tsparticles/interaction-external-attract';
+import { loadExternalBubbleInteraction } from '@tsparticles/interaction-external-bubble';
 import { Component } from '@angular/core';
 import { AboutPage } from './pages/about/about-page/about-page';
 import { ContactPage } from './pages/contact/contact-page/contact-page';
@@ -31,5 +33,7 @@ export class App {
 
   async particlesInit(engine: Engine): Promise<void> {
     await loadBasic(engine);
+    await loadExternalAttractInteraction(engine);
+    await loadExternalBubbleInteraction(engine);
   }
 }

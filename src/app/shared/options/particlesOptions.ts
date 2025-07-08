@@ -12,6 +12,7 @@ export const particlesOptions: ISourceOptions = {
       zIndex: -1,
     },
     interactivity: {
+      detectsOn: "window",
       events: {
         onClick: {
           enable: true,
@@ -19,16 +20,39 @@ export const particlesOptions: ISourceOptions = {
         },
         onHover: {
           enable: true,
-          mode: "repulse",
+          mode: "bubble",
+        },
+        resize: {
+          enable: true,
+          delay: 0.5,
         },
       },
       modes: {
         push: {
-          quantity: 2,
+          quantity: 3,
+        },
+        bubble: {
+          distance: 200,
+          size: 4,
+          duration: 0.3,
+          opacity: 0.8,
+          speed: 3,
+        },
+        attract: {
+          distance: 120,
+          duration: 0.4,
+          easing: "ease-out-quad",
+          factor: 1,
+          maxSpeed: 20,
+          speed: 1,
         },
         repulse: {
-          distance: 100,
+          distance: 80,
           duration: 0.4,
+          factor: 50,
+          speed: 1,
+          maxSpeed: 20,
+          easing: "ease-out-quad",
         },
       },
     },
@@ -45,12 +69,22 @@ export const particlesOptions: ISourceOptions = {
         random: true,
         speed: 0.2,
         straight: false,
+        outModes: {
+          default: "bounce",
+        },
+        attract: {
+          enable: false,
+          rotate: {
+            x: 600,
+            y: 1200,
+          },
+        },
       },
       number: {
         density: {
           enable: true,
         },
-        value: 150,
+        value: 300,
       },
       opacity: {
         value: { min: 0.3, max: 1 },
