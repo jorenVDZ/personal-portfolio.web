@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, HostListener, inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translation.service';

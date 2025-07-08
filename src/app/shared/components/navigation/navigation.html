@@ -1,16 +1,5 @@
 <nav class="custom-navigation">
   <div class="nav-container">
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-      <div class="language-toggle">
-        <div class="custom-language-switch" [class.checked]="currentLanguage === 'nl'" (click)="toggleLanguage()">
-          <span class="background-label left">EN</span>
-          <span class="background-label right">NL</span>
-          <div class="switch-slider"></div>
-        </div>
-      </div>
-    </div>
-
     <!-- Hamburger Menu Button (Mobile Only) -->
     <button class="hamburger" (click)="toggleMobileMenu()">
       <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'" class="hamburger-icon"></i>
@@ -52,5 +41,16 @@
         </li>
       }
     </ul>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <div class="language-toggle">
+        <div class="custom-language-switch" [class.checked]="currentLanguage === 'nl'" (click)="toggleLanguage()">
+          <span class="background-label left">EN</span>
+          <span class="background-label right">NL</span>
+          <div class="switch-slider"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
