@@ -19,8 +19,54 @@
     "skill4": "Leergierig"
   },
   "skills": {
-    "title": "Mijn vaardigheden",
-    "description": "Technologieën en tools waarmee ik werk"
+    "title": "Technische Vaardigheden",
+    "description": "Een uitgebreid overzicht van de technologieën en tools waarmee ik werk, georganiseerd per categorie en vaardigheidsniveau.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "testing": "Testing"
+    },
+    "technologiesCount": "technologieën",
+    "proficiency": {
+      "beginner": "Beginner",
+      "intermediate": "Gemiddeld",
+      "advanced": "Gevorderd",
+      "expert": "Expert"
+    }
+  },
+  "technologies": {
+    "frontend": {
+      "angular": "Modern TypeScript-gebaseerd webapplicatie framework voor het bouwen van dynamische single-page applicaties",
+      "typescript": "Getypeerde superset van JavaScript die statische type definities toevoegt voor een betere ontwikkelervaring",
+      "html5": "Nieuwste markup taal standaard voor het structureren en presenteren van content op het web",
+      "css3": "Geavanceerde styling taal voor het ontwerpen van prachtige en responsieve webinterfaces",
+      "sass": "Krachtige CSS preprocessor met geneste syntax, variabelen en mixins voor onderhoudbare stylesheets",
+      "rxjs": "Reactieve programmeerbibliotheek die observables gebruikt voor het verwerken van asynchrone datastromen"
+    },
+    "backend": {
+      "dotnet": "Cross-platform framework voor het bouwen van moderne web-, cloud- en desktopapplicaties met C#",
+      "entityframework": "Object-relationele mapping (ORM) framework waarmee .NET ontwikkelaars met databases kunnen werken via objecten",
+      "cosmosdb": "Wereldwijd gedistribueerde, multi-model database service van Microsoft Azure met gegarandeerde lage latentie",
+      "restapis": "Architectuurstijl voor het ontwerpen van netwerktoepassing met standaard HTTP-methoden en stateless communicatie",
+      "graphql": "Query taal en runtime voor API's met HotChocolate, voor flexibele en efficiënte data ophaling",
+      "martendb": "PostgreSQL document database en event store bibliotheek voor .NET applicaties"
+    },
+    "cloud": {
+      "aks": "Beheerde Kubernetes container orkestratie service in Azure voor het deployen en schalen van gecontaineriseerde applicaties",
+      "containerApps": "Serverless container platform voor het hosten van microservices en API's zonder infrastructuurbeheer",
+      "logicApps": "Workflow automatiseringsplatform voor het integreren van applicaties, data en services binnen organisaties",
+      "functions": "Serverless compute service voor het uitvoeren van event-driven code zonder servers te beheren",
+      "entraId": "Uitgebreide identiteits- en toegangsbeheer service (voorheen Azure Active Directory)",
+      "devOpsPipelines": "Continue integratie en deployment automatisering voor het bouwen, testen en deployen van applicaties",
+      "applicationInsights": "Applicatie performance monitoring service voor het detecteren en diagnosticeren van problemen in live applicaties"
+    },
+    "testing": {
+      "jest": "Prettig JavaScript test framework met ingebouwde snapshot testing en mocking mogelijkheden",
+      "cypress": "Snel en betrouwbaar end-to-end test framework voor moderne webapplicaties",
+      "karma": "Test runner voor JavaScript die tests uitvoert in echte browsers, voornamelijk gebruikt met Angular",
+      "nunit": "Populair unit-testing framework voor alle .NET talen met rijke assertion bibliotheek"
+    }
   },
   "career": {
     "title": "Mijn Carrière",
@@ -39,7 +85,10 @@
     }
   },
   "contact": {
-    "title": "Neem contact op",
-    "description": "Neem contact met me op"
+    "title": "Neem <b>contact</b> op",
+    "description": "Neem contact met me op",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "downloadCV": "Download CV"
   }
 }
