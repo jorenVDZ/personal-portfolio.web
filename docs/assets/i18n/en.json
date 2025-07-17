@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
-    "projects": "Projects",
+    "career": "Career",
     "contact": "Contact"
   },
   "home": {
@@ -22,9 +22,21 @@
     "title": "My Skills",
     "description": "Technologies and tools I work with"
   },
-  "projects": {
-    "title": "My Projects",
-    "description": "Check out my latest work"
+  "career": {
+    "title": "My Career",
+    "description": "My professional journey and experience",
+    "education": {
+      "title": "Applied Information Science",
+      "institution": "PXL University College",
+      "period": "September 2017 - June 2021",
+      "description": "Bachelor's degree in Applied Information Science with focus on software development and information systems."
+    },
+    "work": {
+      "title": "Full-Stack .NET Developer",
+      "company": "SopraSteria",
+      "period": "July 2021 - Present",
+      "description": "Working as a full-stack .NET developer, building enterprise applications and web solutions."
+    }
   },
   "contact": {
     "title": "Contact Me",

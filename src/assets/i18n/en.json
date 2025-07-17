@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
-    "projects": "Projects",
+    "career": "Career",
     "contact": "Contact"
   },
   "home": {
@@ -19,15 +19,74 @@
     "skill4": "Continuous Learner"
   },
   "skills": {
-    "title": "My Skills",
-    "description": "Technologies and tools I work with"
+    "title": "Technical Skills",
+    "description": "A comprehensive overview of the technologies and tools I work with, organized by category and proficiency level.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "testing": "Testing"
+    },
+    "technologiesCount": "technologies",
+    "proficiency": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    }
   },
-  "projects": {
-    "title": "My Projects",
-    "description": "Check out my latest work"
+  "technologies": {
+    "frontend": {
+      "angular": "Modern TypeScript-based web application framework for building dynamic single-page applications",
+      "typescript": "Typed superset of JavaScript that adds static type definitions for better development experience",
+      "html5": "Latest markup language standard for structuring and presenting content on the web",
+      "css3": "Advanced styling language for designing beautiful and responsive web interfaces",
+      "sass": "Powerful CSS preprocessor with nested syntax, variables, and mixins for maintainable stylesheets",
+      "rxjs": "Reactive programming library using observables for handling asynchronous data streams"
+    },
+    "backend": {
+      "dotnet": "Cross-platform framework for building modern web, cloud, and desktop applications with C#",
+      "entityframework": "Object-relational mapping (ORM) framework that enables .NET developers to work with databases using objects",
+      "cosmosdb": "Globally distributed, multi-model database service from Microsoft Azure with guaranteed low latency",
+      "restapis": "Architectural style for designing networked applications using standard HTTP methods and stateless communication",
+      "graphql": "Query language and runtime for APIs using HotChocolate, providing flexible and efficient data fetching",
+      "martendb": "PostgreSQL document database and event store library for .NET applications"
+    },
+    "cloud": {
+      "aks": "Managed Kubernetes container orchestration service in Azure for deploying and scaling containerized applications",
+      "containerApps": "Serverless container platform for hosting microservices and APIs without managing infrastructure",
+      "logicApps": "Workflow automation platform for integrating applications, data, and services across organizations",
+      "functions": "Serverless compute service for running event-driven code without provisioning or managing servers",
+      "entraId": "Comprehensive identity and access management service (formerly Azure Active Directory)",
+      "devOpsPipelines": "Continuous integration and deployment automation for building, testing, and deploying applications",
+      "applicationInsights": "Application performance monitoring service for detecting and diagnosing issues in live applications"
+    },
+    "testing": {
+      "jest": "Delightful JavaScript testing framework with built-in snapshot testing and mocking capabilities",
+      "cypress": "Fast and reliable end-to-end testing framework for modern web applications",
+      "karma": "Test runner for JavaScript that executes tests in real browsers, primarily used with Angular",
+      "nunit": "Popular unit-testing framework for all .NET languages with rich assertion library"
+    }
+  },
+  "career": {
+    "education": {
+      "title": "Applied Information Science",
+      "institution": "PXL University College",
+      "period": "September 2017 - June 2021",
+      "description": "Bachelor's degree in Applied Information Science with focus on software development and information systems."
+    },
+    "work": {
+      "title": "Full-Stack .NET Developer",
+      "company": "Sopra Steria",
+      "period": "July 2021 - Present",
+      "description": "Working as a full-stack .NET developer, building enterprise applications and web solutions."
+    }
   },
   "contact": {
-    "title": "Contact Me",
-    "description": "Get in touch with me"
+    "title": "Contact <b>Me</b>",
+    "description": "Get in touch with me",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "downloadCV": "Download CV"
   }
 }

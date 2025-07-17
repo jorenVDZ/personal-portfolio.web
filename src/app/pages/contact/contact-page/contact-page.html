@@ -1,0 +1,51 @@
+<div class="contact-page min-h-screen py-16 px-4">
+  <div class="max-w-2xl mx-auto text-center">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"
+        [innerHTML]="'contact.title' | translate">
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg md:text-xl text-gray-600 mb-12">
+      {{ 'contact.description' | translate }}
+    </p>
+
+    <!-- Contact Information -->
+    <div class="flex justify-center space-x-8 mb-12">
+      <!-- Email -->
+      <button (click)="openEmail()"
+              class="group flex flex-col items-center p-6 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:shadow-md transition-all duration-200 w-72">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3 shadow-sm group-hover:shadow-md transition-shadow duration-200">
+          <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <span class="text-sm font-medium text-white mb-1">{{ 'contact.email' | translate }}</span>
+        <span class="text-emerald-400 font-semibold text-sm group-hover:text-emerald-300 transition-colors duration-200 text-center break-all">jorenvanderzande&#64;hotmail.com</span>
+      </button>
+
+      <!-- LinkedIn -->
+      <button (click)="openLinkedIn()"
+              class="group flex flex-col items-center p-6 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:shadow-md transition-all duration-200 w-72">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-3 shadow-sm group-hover:shadow-md transition-shadow duration-200">
+          <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </div>
+        <span class="text-sm font-medium text-white mb-1">{{ 'contact.linkedin' | translate }}</span>
+        <span class="text-emerald-400 font-semibold text-sm group-hover:text-emerald-300 transition-colors duration-200 text-center">Joren Vanderzande</span>
+      </button>
+    </div>
+
+    <!-- Download CV Button -->
+    <div class="flex justify-center">
+      <button (click)="downloadCV()"
+              class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-lg shadow-md hover:from-emerald-600 hover:to-emerald-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        {{ 'contact.downloadCV' | translate }}
+      </button>
+    </div>
+  </div>
+</div>

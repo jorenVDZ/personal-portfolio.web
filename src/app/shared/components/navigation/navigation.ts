@@ -27,7 +27,7 @@ export class Navigation implements OnInit, OnDestroy {
   isMobileMenuOpen: boolean = false;
   currentLanguage: string = 'en';
   private observer: IntersectionObserver | null = null;
-  private sectionIds = ['home', 'about', 'projects', 'skills', 'contact'];
+  private sectionIds = ['home', 'about', 'career', 'skills', 'contact'];
 
   ngOnInit() {
     this.currentLanguage = this._translationService.getCurrentLanguage();
@@ -46,10 +46,10 @@ export class Navigation implements OnInit, OnDestroy {
         command: () => this.scrollTo('about')
       },
       {
-        label: 'Projects',
-        translationKey: 'navigation.projects',
+        label: 'Career',
+        translationKey: 'navigation.career',
         icon: 'pi pi-briefcase',
-        command: () => this.scrollTo('projects')
+        command: () => this.scrollTo('career')
       },
       {
         label: 'Skills',

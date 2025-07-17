@@ -3,7 +3,7 @@
     "home": "Startpagina",
     "about": "Over mij",
     "skills": "Vaardigheden",
-    "projects": "Projecten",
+    "career": "Carrière",
     "contact": "Contact"
   },
   "home": {
@@ -22,9 +22,21 @@
     "title": "Mijn vaardigheden",
     "description": "Technologieën en tools waarmee ik werk"
   },
-  "projects": {
-    "title": "Mijn projecten",
-    "description": "Bekijk mijn nieuwste werk"
+  "career": {
+    "title": "Mijn Carrière",
+    "description": "Mijn professionele reis en ervaring",
+    "education": {
+      "title": "Toegepaste Informatica",
+      "institution": "Hogeschool PXL",
+      "period": "September 2017 - Juni 2021",
+      "description": "Bachelor diploma in Toegepaste Informatica met focus op software ontwikkeling en informatiesystemen."
+    },
+    "work": {
+      "title": "Full-Stack .NET Developer",
+      "company": "SopraSteria",
+      "period": "Juli 2021 - Heden",
+      "description": "Werkzaam als full-stack .NET developer, bouw van enterprise applicaties en web oplossingen."
+    }
   },
   "contact": {
     "title": "Neem contact op",
