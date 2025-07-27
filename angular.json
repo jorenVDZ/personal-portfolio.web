@@ -68,7 +68,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/personal-portfolio.web/"
+              "baseHref": "/"
             },
             "development": {
               "optimization": false,
