@@ -210,12 +210,25 @@ export class TechnologiesService {
   getTechnologiesGroupedByCategory(): { [key in TechnologyCategory]: Technology[] } {
     const grouped = {} as { [key in TechnologyCategory]: Technology[] };
 
+    const proficiencyOrder = {
+      [ProficiencyLevel.EXPERT]: 0,
+      [ProficiencyLevel.ADVANCED]: 1,
+      [ProficiencyLevel.INTERMEDIATE]: 2,
+      [ProficiencyLevel.BEGINNER]: 3
+    };
+
     Object.values(TechnologyCategory).forEach(category => {
       grouped[category] = [];
     });
 
     this.technologies.forEach(tech => {
       grouped[tech.category].push(tech);
+    });
+
+    Object.values(TechnologyCategory).forEach(category => {
+      grouped[category].sort((a, b) =>
+        proficiencyOrder[a.proficiency] - proficiencyOrder[b.proficiency]
+      );
     });
 
     return grouped;

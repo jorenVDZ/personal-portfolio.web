@@ -1,16 +1,16 @@
-<div class="app-container">
-  <div class="gradient-background"></div>
+<div class="relative h-screen overflow-hidden">
+  <div class="fixed top-0 left-0 w-full h-full -z-10 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950"></div>
   <ngx-particles
       [id]="id"
       [options]="particlesOptions"
       [particlesInit]="particlesInit.bind(this)">
     </ngx-particles>
-  <div class="scroll-container">
-    <app-navigation class="nav"></app-navigation>
-    <app-home-page class="page" id="home"></app-home-page>
-    <app-about-page class="page" id="about"></app-about-page>
-    <app-career-page class="page" id="career"></app-career-page>
-    <app-skills-page class="page" id="skills"></app-skills-page>
-    <app-contact-page class="page" id="contact"></app-contact-page>
+  <div class="overflow-y-scroll h-screen scroll-smooth relative z-10">
+    <app-navigation class="fixed top-0 z-20"></app-navigation>
+    <app-home-page class="flex flex-col min-h-[calc(100vh-5rem)]" id="home"></app-home-page>
+    <app-about-page class="flex flex-col min-h-[calc(100vh-5rem)]" id="about"></app-about-page>
+    <app-career-page class="flex flex-col min-h-[calc(100vh-5rem)]" id="career"></app-career-page>
+    <app-skills-page class="flex flex-col min-h-[calc(100vh-5rem)]" id="skills"></app-skills-page>
+    <app-contact-page class="flex flex-col min-h-[calc(100vh-5rem)]" id="contact"></app-contact-page>
   </div>
 </div>
