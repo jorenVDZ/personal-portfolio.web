@@ -12,7 +12,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class ContactPage {
   downloadCV(): void {
     const link = document.createElement('a');
-    link.href = '/personal-portfolio.web/assets/cv.pdf';
+    link.href = '/assets/cv.pdf';
     link.download = 'Joren_Vanderzande_CV.pdf';
     link.click();
   }
