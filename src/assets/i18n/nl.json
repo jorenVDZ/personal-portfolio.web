@@ -69,19 +69,31 @@
     }
   },
   "career": {
-    "title": "Mijn Carrière",
-    "description": "Mijn professionele reis en ervaring",
+    "title": "<b>Carrière Traject</b>",
+    "description": "Mijn professionele reis door onderwijs en werkervaring",
+    "yearsExperience": "jaar ervaring",
+    "types": {
+      "work": "Werkervaring",
+      "education": "Onderwijs",
+      "project": "Projecten",
+      "certification": "Certificeringen"
+    },
+    "stats": {
+      "yearsExperience": "Jaar Ervaring",
+      "positions": "Posities",
+      "education": "Onderwijs"
+    },
     "education": {
       "title": "Toegepaste Informatica",
       "institution": "Hogeschool PXL",
       "period": "September 2017 - Juni 2021",
-      "description": "Bachelor diploma in Toegepaste Informatica met focus op software ontwikkeling en informatiesystemen."
+      "description": "Bachelor diploma in Toegepaste Informatica met focus op software ontwikkeling en informatiesystemen. Uitgebreide kennis opgedaan in programmeren, database design, web development en software engineering principes."
     },
     "work": {
       "title": "Full-Stack .NET Developer",
-      "company": "SopraSteria",
+      "company": "Sopra Steria",
       "period": "Juli 2021 - Heden",
-      "description": "Werkzaam als full-stack .NET developer, bouw van enterprise applicaties en web oplossingen."
+      "description": "Werkzaam als full-stack .NET developer, bouw van enterprise applicaties en web oplossingen. Ervaring in het ontwikkelen van schaalbare web applicaties met moderne technologieën zoals Angular, .NET Core en Azure cloud services."
     }
   },
   "contact": {

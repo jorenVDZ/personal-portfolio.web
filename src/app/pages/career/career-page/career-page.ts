@@ -1,39 +1,47 @@
 import { Component } from '@angular/core';
-
-interface CareerEvent {
-  titleKey: string;
-  subtitleKey: string;
-  dateStart: Date;
-  dateEnd?: Date;
-  icon: string;
-  color: string;
-  descriptionKey: string;
-}
+import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
+import { CareerService, CareerEvent, CareerEventType } from '../../../shared/services/career.service';
 
 @Component({
   selector: 'app-career-page',
-  imports: [],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './career-page.html',
   styleUrl: './career-page.scss'
 })
 export class CareerPage {
-  events: CareerEvent[] = [
-    {
-      titleKey: 'career.education.title',
-      subtitleKey: 'career.education.institution',
-      dateStart: new Date('2017-09-01'),
-      dateEnd: new Date('2021-06-30'),
-      icon: 'pi pi-graduation-cap',
-      color: '#10B981',
-      descriptionKey: 'career.education.description'
-    },
-    {
-      titleKey: 'career.work.title',
-      subtitleKey: 'career.work.company',
-      dateStart: new Date('2021-07-01'),
-      icon: 'pi pi-briefcase',
-      color: '#059669',
-      descriptionKey: 'career.work.description'
-    }
+  careerEventsGrouped: { [key in CareerEventType]: CareerEvent[] };
+  eventTypeOrder: CareerEventType[] = [
+    CareerEventType.WORK,
+    CareerEventType.EDUCATION,
+    CareerEventType.PROJECT,
+    CareerEventType.CERTIFICATION
   ];
+
+  eventTypeLabels: { [key in CareerEventType]: string } = {
+    [CareerEventType.WORK]: 'career.types.work',
+    [CareerEventType.EDUCATION]: 'career.types.education',
+    [CareerEventType.PROJECT]: 'career.types.project',
+    [CareerEventType.CERTIFICATION]: 'career.types.certification'
+  };
+
+  constructor(private careerService: CareerService) {
+    this.careerEventsGrouped = this.careerService.getCareerEventsGroupedByType();
+  }
+
+  formatDateRange(event: CareerEvent): string {
+    return this.careerService.formatDateRange(event);
+  }
+
+  formatDuration(event: CareerEvent): string {
+    return this.careerService.formatDuration(event);
+  }
+
+  getTotalExperienceYears(): number {
+    return this.careerService.getTotalExperienceYears();
+  }
+
+  hasEventsOfType(type: CareerEventType): boolean {
+    return this.careerEventsGrouped[type].length > 0;
+  }
 }

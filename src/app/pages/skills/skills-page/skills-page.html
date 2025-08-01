@@ -1,6 +1,5 @@
 <div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    <!-- Header -->
     <div class="text-center mt-12 mb-12">
       <h1 class="mb-4"><b>{{ 'skills.title' | translate }}</b></h1>
       <h3 class="mx-auto">
@@ -8,16 +7,13 @@
       </h3>
     </div>
 
-    <!-- Skills Categories -->
     <div class="space-y-12">
       <div *ngFor="let category of categoryOrder" class="bg-gray-900/80 backdrop-blur-sm rounded-lg shadow-lg p-8">
-        <!-- Category Header -->
         <div class="mb-8">
           <h2 class="text-2xl font-semibold text-white mb-2">{{ categoryLabels[category] | translate }}</h2>
           <div class="h-1 w-20 bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 rounded-full"></div>
         </div>
 
-        <!-- Technology Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <div *ngFor="let tech of technologiesGrouped[category]"
                class="group relative bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 hover:shadow-md transition-all duration-200 border border-white/20 tech-card"
@@ -26,7 +22,6 @@
                [showDelay]="300"
                [hideDelay]="100">
 
-            <!-- Technology Icon -->
             <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-white rounded-full shadow-sm group-hover:shadow-md transition-shadow duration-200 tech-icon">
               <img
                 [src]="tech.icon"
@@ -36,10 +31,8 @@
               />
             </div>
 
-            <!-- Technology Name -->
             <h3 class="text-lg font-semibold text-white text-center mb-3">{{ tech.name }}</h3>
 
-            <!-- Proficiency Badge -->
             <div class="flex justify-center">
               <span
                 class="px-3 py-1 text-xs font-medium rounded-full {{ getProficiencyColor(tech.proficiency) }}"
@@ -48,15 +41,7 @@
               </span>
             </div>
 
-            <!-- Hover Effect Overlay -->
             <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-600/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-          </div>
-        </div>
-
-        <!-- Category Summary -->
-        <div class="mt-8 pt-6 border-t border-white/20">
-          <div class="flex flex-wrap gap-2 justify-center">
-            <span class="text-sm text-gray-300">{{ technologiesGrouped[category].length }} {{ 'skills.technologiesCount' | translate }}</span>
           </div>
         </div>
       </div>

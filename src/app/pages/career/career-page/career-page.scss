@@ -1,0 +1,10 @@
+h2, h3 {
+  margin: 0;
+}
+
+.flex.items-center.justify-center.mb-8 {
+  @media (max-width: 1023px) {
+    justify-content: flex-start;
+    margin-left: 2.75rem;
+  }
+}

@@ -69,17 +69,31 @@
     }
   },
   "career": {
+    "title": "<b>Career Journey</b>",
+    "description": "My professional journey through education and work experience",
+    "yearsExperience": "years of experience",
+    "types": {
+      "work": "Work Experience",
+      "education": "Education",
+      "project": "Projects",
+      "certification": "Certifications"
+    },
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "positions": "Positions",
+      "education": "Education"
+    },
     "education": {
       "title": "Applied Information Science",
       "institution": "PXL University College",
       "period": "September 2017 - June 2021",
-      "description": "Bachelor's degree in Applied Information Science with focus on software development and information systems."
+      "description": "Bachelor's degree in Applied Information Science with focus on software development and information systems. Gained comprehensive knowledge in programming, database design, web development, and software engineering principles."
     },
     "work": {
       "title": "Full-Stack .NET Developer",
       "company": "Sopra Steria",
       "period": "July 2021 - Present",
-      "description": "Working as a full-stack .NET developer, building enterprise applications and web solutions."
+      "description": "Working as a full-stack .NET developer, building enterprise applications and web solutions. Experienced in developing scalable web applications using modern technologies like Angular, .NET Core, and Azure cloud services."
     }
   },
   "contact": {

@@ -1,2 +1,77 @@
-<div class="min-h-screen">
+<div class="min-h-screen text-white py-16 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"
+          [innerHTML]="'career.title' | translate">
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 mb-8">
+        {{ 'career.description' | translate }}
+      </p>
+      <div class="text-lg text-emerald-300">
+        {{ getTotalExperienceYears() }}+ {{ 'career.yearsExperience' | translate }}
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-px h-full bg-gradient-to-b from-emerald-400 to-emerald-600 -z-10"></div>
+
+      <div *ngFor="let eventType of eventTypeOrder; let typeIndex = index" class="mb-12">
+        <div *ngIf="hasEventsOfType(eventType)">
+          <div class="flex items-center justify-center mb-8">
+            <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 px-6 py-2 rounded-full">
+              <h2 class="text-xl font-semibold">{{ eventTypeLabels[eventType] | translate }}</h2>
+            </div>
+          </div>
+
+          <div *ngFor="let event of careerEventsGrouped[eventType]; let eventIndex = index"
+               class="relative mb-8 md:mb-12">
+
+            <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full border-4 border-gray-900 z-10"></div>
+
+            <div class="ml-12 md:ml-0" [ngClass]="{
+              'md:mr-auto md:pr-8 md:text-right md:w-1/2': eventIndex % 2 === 0,
+              'md:ml-auto md:pl-8 md:w-1/2': eventIndex % 2 === 1
+            }">
+              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/20 hover:shadow-md transition-all duration-200 group">
+                <div class="mb-4">
+                  <div class="flex items-baseline gap-3 mb-2" [ngClass]="{
+                    'md:justify-end': eventIndex % 2 === 0,
+                    'md:justify-start': eventIndex % 2 === 1
+                  }">
+                    <h3 class="text-xl font-bold text-white">
+                      {{ event.titleKey | translate }}
+                    </h3>
+                    <div *ngIf="event.icon">
+                      <i [class]="event.icon + ' text-2xl text-emerald-400'"></i>
+                    </div>
+                  </div>
+                  <h4 class="text-lg text-emerald-300 mb-2">
+                    {{ event.subtitleKey | translate }}
+                  </h4>
+                  <div class="flex flex-wrap gap-2 text-sm text-gray-300">
+                    <span class="flex items-center gap-1">
+                      <i class="pi pi-calendar text-emerald-400"></i>
+                      {{ formatDateRange(event) }}
+                    </span>
+                    <span class="flex items-center gap-1">
+                      <i class="pi pi-clock text-emerald-500"></i>
+                      {{ formatDuration(event) }}
+                    </span>
+                    <span *ngIf="event.location" class="flex items-center gap-1">
+                      <i class="pi pi-map-marker text-emerald-300"></i>
+                      {{ event.location }}
+                    </span>
+                  </div>
+                </div>
+
+                <p class="text-gray-300 mb-4 leading-relaxed text-left">
+                  {{ event.descriptionKey | translate }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
