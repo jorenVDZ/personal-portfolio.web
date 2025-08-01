@@ -89,6 +89,32 @@
       "period": "September 2017 - Juni 2021",
       "description": "Bachelor diploma in Toegepaste Informatica met focus op software ontwikkeling en informatiesystemen. Uitgebreide kennis opgedaan in programmeren, database design, web development en software engineering principes."
     },
+    "project": {
+      "bankingAppRestaurantBooking": {
+        "title": "Uitbreiding van bestaande banking PWA met restaurant reserveringsfunctionaliteit",
+        "description": "Bijgedragen aan de uitbreiding van een bestaande progressive web app in de bancaire sector door het implementeren van een restaurant reserveringsfunctie. Frontend ontwikkeld op basis van Adobe XD ontwerpen van de klant, gebruik makend van hun custom component bibliotheek. Ook kleine backend aanpassingen gedaan voor goede integratie met de restaurant reserverings-API."
+      },
+      "creditPortal": {
+        "title": "Ontwikkeling en leiding van een consumptiekrediet en hypotheek beheerportaal",
+        "description": "Gewerkt aan een digitaal portaal waarmee eindgebruikers hun hypotheken en consumptiekredieten kunnen bekijken en beheren. Bijgedragen aan de volledige stack, van frontend ontwikkeling tot backend implementatie en DevOps pipeline setup. In de loop van de tijd doorgegroeid naar een technische teamlead rol, waarbij ik architecturale beslissingen nam, het team begeleidde, communiceerde met stakeholders en zorgde voor een soepele projectuitvoering."
+      },
+      "publicMunicipality": {
+        "title": "Onderhoud en infrastructuur upgrade van een gemeente-overheid integratieplatform",
+        "description": "Onderhouden en uitgebreid van een bestaand integratieplatform dat communicatie tussen gemeenten en de Vlaamse overheid faciliteert. De applicatie transformeerde inkomende data van gemeenten naar een door de overheid vereist formaat en ondersteunde aanvullende niet-gouvernementele extensies. Eigenaarschap genomen van het CI/CD proces door een robuust versioning en deployment systeem vanaf nul op te zetten, en kleine nieuwe functies geïmplementeerd tijdens de onderhoudsfase."
+      },
+      "mockWms": {
+        "title": "Ontwikkeling van een mock WMS systeem ter ondersteuning van ERP testing",
+        "description": "Voornamelijk gewerkt als frontend developer terwijl ik actief betrokken was bij de klant door tweewekelijkse demo's en meetings. Een lichtgewicht CRUD applicatie gebouwd om de essentiële functionaliteit van een warehouse management systeem (WMS) te simuleren voor testdoeleinden. Het mock systeem stelde de klant in staat om updates aan hun ERP systeem te valideren zonder telkens de volledige WMS omgeving te hoeven opstarten, wat het ontwikkel- en testproces stroomlijnde."
+      },
+      "cmsDashboard": {
+        "title": "Frontend ontwikkeling voor CMS vervanging en data dashboard in de landbouwsector",
+        "description": "Gewerkt als frontend developer aan een project waarbij een verouderd in-house CMS systeem vervangen werd door Umbraco. Daarnaast ontwikkeld van een aantrekkelijk en gebruiksvriendelijk dashboard met belangrijke data inzichten voor een klant in de landbouwsector."
+      },
+      "publicAdminPortal": {
+        "title": "Full stack ontwikkeling van een admin portaal voor cursusbeheer binnen een vakbond",
+        "description": "Gewerkt als full stack developer aan het admin portaal. Het hoofdkenmerk waaraan ik werkte was een platform voor het beheren van educatieve cursussen. Met dit platform kan de vakbond cursusinformatie opslaan, deelnemers registreren, aanwezigheid bijhouden en andere essentiële data onderhouden. Het systeem gebruikt event sourcing voor data opslag en GraphQL voor querying. Alles draait in een Kubernetes omgeving."
+      }
+    },
     "work": {
       "title": "Full-Stack .NET Developer",
       "company": "Sopra Steria",

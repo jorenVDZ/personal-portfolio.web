@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TechnologiesService, Technology } from './technologies.service';
 
 export interface CareerEvent {
   titleKey: string;
@@ -9,7 +10,15 @@ export interface CareerEvent {
   type: CareerEventType;
   icon?: string;
   location?: string;
-  skills?: string[];
+  projects?: Project[];
+}
+
+export interface Project {
+  titleKey: string;
+  descriptionKey: string;
+  dateStart: Date;
+  dateEnd?: Date;
+  technologies?: string[]; // Technology names that match the TechnologiesService
 }
 
 export enum CareerEventType {
@@ -23,6 +32,8 @@ export enum CareerEventType {
   providedIn: 'root'
 })
 export class CareerService {
+  constructor(private technologiesService: TechnologiesService) {}
+
   private readonly careerEvents: CareerEvent[] = [
     {
       titleKey: 'career.education.title',
@@ -42,6 +53,49 @@ export class CareerService {
       type: CareerEventType.WORK,
       icon: 'pi pi-briefcase',
       location: 'Belgium',
+      projects: [
+        {
+          titleKey: 'career.project.bankingAppRestaurantBooking.title',
+          descriptionKey: 'career.project.bankingAppRestaurantBooking.description',
+          dateStart: new Date(2021, 7),
+          dateEnd: new Date(2021, 9),
+          technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
+        },
+        {
+          titleKey: 'career.project.creditPortal.title',
+          descriptionKey: 'career.project.creditPortal.description',
+          dateStart: new Date(2021, 9),
+          dateEnd: new Date(2024, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'Application Insights', 'Azure DevOps Pipelines', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Karma']
+        },
+        {
+          titleKey: 'career.project.publicMunicipality.title',
+          descriptionKey: 'career.project.publicMunicipality.description',
+          dateStart: new Date(2022, 10),
+          dateEnd: new Date(2024, 4),
+          technologies: ['.NET', 'Azure DevOps Pipelines', 'Azure Functions', 'Azure Logic Apps']
+        },
+        {
+          titleKey: 'career.project.mockWms.title',
+          descriptionKey: 'career.project.mockWms.description',
+          dateStart: new Date(2022, 7),
+          dateEnd: new Date(2023, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
+        },
+        {
+          titleKey: 'career.project.cmsDashboard.title',
+          descriptionKey: 'career.project.cmsDashboard.description',
+          dateStart: new Date(2023, 5),
+          dateEnd: new Date(2024, 4),
+          technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'SASS']
+        },
+        {
+          titleKey: 'career.project.publicAdminPortal.title',
+          descriptionKey: 'career.project.publicAdminPortal.description',
+          dateStart: new Date(2024, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'GraphQL (HotChocolate)', 'MartenDB', 'Azure Kubernetes Service (AKS)', 'Microsoft Entra ID', 'HTML5', 'CSS3', 'SASS', 'RxJS']
+        },
+      ]
     }
   ];
 
@@ -145,5 +199,48 @@ export class CareerService {
     } else {
       return `${years} year${years !== 1 ? 's' : ''} ${remainingMonths} month${remainingMonths !== 1 ? 's' : ''}`;
     }
+  }
+
+  // Technology-related methods
+  getProjectTechnologies(project: Project): Technology[] {
+    if (!project.technologies) return [];
+
+    return project.technologies
+      .map(techName => this.technologiesService.getTechnology(techName))
+      .filter((tech): tech is Technology => tech !== undefined);
+  }
+
+  getAllProjectTechnologies(): Technology[] {
+    const allTechNames = new Set<string>();
+
+    this.careerEvents.forEach(event => {
+      event.projects?.forEach(project => {
+        project.technologies?.forEach(techName => {
+          allTechNames.add(techName);
+        });
+      });
+    });
+
+    return Array.from(allTechNames)
+      .map(techName => this.technologiesService.getTechnology(techName))
+      .filter((tech): tech is Technology => tech !== undefined);
+  }
+
+  getProjectsByTechnology(technologyName: string): Project[] {
+    const projects: Project[] = [];
+
+    this.careerEvents.forEach(event => {
+      event.projects?.forEach(project => {
+        if (project.technologies?.includes(technologyName)) {
+          projects.push(project);
+        }
+      });
+    });
+
+    return projects.sort((a, b) => b.dateStart.getTime() - a.dateStart.getTime());
+  }
+
+  getTechnologyUsageCount(technologyName: string): number {
+    return this.getProjectsByTechnology(technologyName).length;
   }
 }
