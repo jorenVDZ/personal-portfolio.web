@@ -4,13 +4,12 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { CareerService, CareerEvent, CareerEventType, Project } from '../../../shared/services/career.service';
 import { TechnologiesService, Technology } from '../../../shared/services/technologies.service';
 import { DrawerModule } from 'primeng/drawer';
-import { ChipModule } from 'primeng/chip';
 import { ButtonModule } from 'primeng/button';
 import { SharedModule } from 'primeng/api';
 
 @Component({
   selector: 'app-career-page',
-  imports: [CommonModule, TranslatePipe, DrawerModule, ChipModule, ButtonModule, SharedModule],
+  imports: [CommonModule, TranslatePipe, DrawerModule, ButtonModule, SharedModule],
   templateUrl: './career-page.html',
   styleUrl: './career-page.scss'
 })
@@ -99,5 +98,25 @@ export class CareerPage {
       : 'Present';
 
     return `${startFormatted} - ${endFormatted}`;
+  }
+
+  isLastEvent(typeIndex: number, eventIndex: number): boolean {
+    // Check if this is the last event in the current type
+    const currentEventType = this.eventTypeOrder[typeIndex];
+    const isLastInCurrentType = eventIndex === this.careerEventsGrouped[currentEventType].length - 1;
+
+    if (!isLastInCurrentType) {
+      return false;
+    }
+
+    // Check if this is the last type with events
+    for (let i = typeIndex + 1; i < this.eventTypeOrder.length; i++) {
+      const nextEventType = this.eventTypeOrder[i];
+      if (this.careerEventsGrouped[nextEventType].length > 0) {
+        return false; // There are more events in subsequent types
+      }
+    }
+
+    return true; // This is the last event overall
   }
 }

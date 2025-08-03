@@ -55,32 +55,10 @@ export class CareerService {
       location: 'Belgium',
       projects: [
         {
-          titleKey: 'career.project.bankingAppRestaurantBooking.title',
-          descriptionKey: 'career.project.bankingAppRestaurantBooking.description',
-          dateStart: new Date(2021, 7),
-          dateEnd: new Date(2021, 9),
-          technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
-        },
-        {
-          titleKey: 'career.project.creditPortal.title',
-          descriptionKey: 'career.project.creditPortal.description',
-          dateStart: new Date(2021, 9),
-          dateEnd: new Date(2024, 4),
-          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'Application Insights', 'Azure DevOps Pipelines', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Karma']
-        },
-        {
-          titleKey: 'career.project.publicMunicipality.title',
-          descriptionKey: 'career.project.publicMunicipality.description',
-          dateStart: new Date(2022, 10),
-          dateEnd: new Date(2024, 4),
-          technologies: ['.NET', 'Azure DevOps Pipelines', 'Azure Functions', 'Azure Logic Apps']
-        },
-        {
-          titleKey: 'career.project.mockWms.title',
-          descriptionKey: 'career.project.mockWms.description',
-          dateStart: new Date(2022, 7),
-          dateEnd: new Date(2023, 4),
-          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
+          titleKey: 'career.project.publicAdminPortal.title',
+          descriptionKey: 'career.project.publicAdminPortal.description',
+          dateStart: new Date(2024, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'GraphQL (HotChocolate)', 'MartenDB', 'Azure Kubernetes Service (AKS)', 'Microsoft Entra ID', 'HTML5', 'CSS3', 'SASS', 'RxJS']
         },
         {
           titleKey: 'career.project.cmsDashboard.title',
@@ -90,10 +68,32 @@ export class CareerService {
           technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'SASS']
         },
         {
-          titleKey: 'career.project.publicAdminPortal.title',
-          descriptionKey: 'career.project.publicAdminPortal.description',
-          dateStart: new Date(2024, 4),
-          technologies: ['Angular', 'TypeScript', '.NET', 'GraphQL (HotChocolate)', 'MartenDB', 'Azure Kubernetes Service (AKS)', 'Microsoft Entra ID', 'HTML5', 'CSS3', 'SASS', 'RxJS']
+          titleKey: 'career.project.mockWms.title',
+          descriptionKey: 'career.project.mockWms.description',
+          dateStart: new Date(2022, 7),
+          dateEnd: new Date(2023, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
+        },
+        {
+          titleKey: 'career.project.publicMunicipality.title',
+          descriptionKey: 'career.project.publicMunicipality.description',
+          dateStart: new Date(2022, 10),
+          dateEnd: new Date(2024, 4),
+          technologies: ['.NET', 'Azure DevOps Pipelines', 'Azure Functions', 'Azure Logic Apps']
+        },
+        {
+          titleKey: 'career.project.creditPortal.title',
+          descriptionKey: 'career.project.creditPortal.description',
+          dateStart: new Date(2021, 9),
+          dateEnd: new Date(2024, 4),
+          technologies: ['Angular', 'TypeScript', '.NET', 'Entity Framework Core', 'Application Insights', 'Azure DevOps Pipelines', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Karma']
+        },
+        {
+          titleKey: 'career.project.bankingAppRestaurantBooking.title',
+          descriptionKey: 'career.project.bankingAppRestaurantBooking.description',
+          dateStart: new Date(2021, 7),
+          dateEnd: new Date(2021, 9),
+          technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'SASS', 'RxJS', 'Cypress', 'Karma']
         },
       ]
     }

@@ -113,7 +113,10 @@
       "publicAdminPortal": {
         "title": "Full stack ontwikkeling van een admin portaal voor cursusbeheer binnen een vakbond",
         "description": "Gewerkt als full stack developer aan het admin portaal. Het hoofdkenmerk waaraan ik werkte was een platform voor het beheren van educatieve cursussen. Met dit platform kan de vakbond cursusinformatie opslaan, deelnemers registreren, aanwezigheid bijhouden en andere essentiële data onderhouden. Het systeem gebruikt event sourcing voor data opslag en GraphQL voor querying. Alles draait in een Kubernetes omgeving."
-      }
+      },
+      "viewProjects": "Bekijk Projecten",
+      "projects": "Projecten",
+      "technologiesUsed": "Gebruikte Technologieën"
     },
     "work": {
       "title": "Full-Stack .NET Developer",

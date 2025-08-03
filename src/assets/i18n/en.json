@@ -73,7 +73,7 @@
     "description": "My professional journey through education and work experience",
     "yearsExperience": "years of experience",
     "types": {
-      "work": "Work Experience",
+      "work": "Work",
       "education": "Education",
       "project": "Projects",
       "certification": "Certifications"
@@ -113,7 +113,10 @@
       "publicAdminPortal": {
         "title": "Full stack development of an admin portal for course management within a union",
         "description": "Worked as a full stack developer on the admin portal. The main feature I worked on was a platform for managing educational courses. With this platform, the union can store course information, register participants, record attendance, and maintain other essential data. The system uses event sourcing for data storage and GraphQL for querying. Everything runs in a Kubernetes environment."
-      }
+      },
+      "viewProjects": "View Projects",
+      "projects": "Projects",
+      "technologiesUsed": "Technologies Used"
     },
     "work": {
       "title": "Full-Stack .NET Developer",
