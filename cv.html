@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joren Vanderzande - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            font-size: 11px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            gap: 20px;
+        }
+
+        .profile-picture {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #10b981;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 10px;
+        }
+
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+
+        .website-url {
+            font-size: 7px;
+            color: #7f8c8d;
+            text-align: center;
+            line-height: 1.1;
+            max-width: 85px;
+            word-break: break-word;
+            hyphens: auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 2px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 12px;
+        }
+
+        .experience-company {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 11px;
+        }
+
+        .experience-period {
+            font-size: 10px;
+            color: #95a5a6;
+            margin-bottom: 5px;
+        }
+
+        .experience-description {
+            font-size: 10px;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skills-grid-full {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #10b981;
+        }
+
+        .skill-category h4 {
+            font-size: 11px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            font-size: 9px;
+            margin-bottom: 3px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: #10b981;
+            position: absolute;
+            left: 0;
+        }
+
+        .project {
+            margin-bottom: 12px;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 3px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 10px;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .project-period {
+            font-size: 9px;
+            color: #7f8c8d;
+            margin-bottom: 3px;
+        }
+
+        .project-description {
+            font-size: 9px;
+            text-align: justify;
+        }
+
+        .about-section {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 3px solid #10b981;
+        }
+
+        .about-section p {
+            font-size: 10px;
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .language-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 11px;
+        }
+
+        .language-level {
+            color: #10b981;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 15mm;
+                max-width: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="src/assets/profile-image.jpg" alt="Joren Vanderzande" class="profile-picture">
+        <div class="header-content">
+            <h1>Joren Vanderzande</h1>
+            <h2>Full-Stack Web Developer</h2>
+            <div class="contact-info">
+                <span>📍 Belgium</span>
+                <span>📧 jorenvanderzande@hotmail.com</span>
+                <span>💼 LinkedIn: Joren Vanderzande</span>
+            </div>
+        </div>
+        <div class="qr-section">
+            <img src="src/assets/frame.png" alt="QR Code" class="qr-code">
+            <div class="website-url"><a href="https://jorenvanderzande.com" target="_blank">jorenvanderzande.com</a></div>
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="left-column">
+            <div class="section">
+                <div class="section-title">About Me</div>
+                <p style="font-size: 10px; text-align: justify; margin-bottom: 8px;">I studied <strong>Applied Information Science</strong> at <strong>PXL University College</strong> and currently work as a <strong>full-stack .NET developer</strong>, with a strong preference for <strong>frontend development</strong>. I'm always looking to grow as a developer, and I have a special interest in topics like <strong>DevOps</strong> and <strong>software architecture</strong>.</p>
+                <p style="font-size: 10px; text-align: justify;">Something I truly enjoy is <strong>mentoring</strong>. Whether I'm supporting colleagues or guiding interns, I find it rewarding to share knowledge and help others develop their skills.</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Languages</div>
+                <div class="language-item">
+                    <div class="language-name">Dutch</div>
+                    <div class="language-level">Native Speaker</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">English</div>
+                    <div class="language-level">Fluent</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="section">
+                <div class="section-title">Work Experience</div>
+                <div class="experience-item">
+                    <div class="experience-title">Full-Stack .NET Developer</div>
+                    <div class="experience-company">Sopra Steria</div>
+                    <div class="experience-period">July 2021 - Present (4+ years)</div>
+                    <div class="experience-description">
+                        Working as a full-stack .NET developer, building enterprise applications and web solutions. Experienced in developing scalable web applications using modern technologies like Angular, .NET Core, and Azure cloud services.
+                    </div>
+                    <div class="experience-description">
+                      For more information about my work, please visit my <a href="https://jorenvanderzande.com" target="_blank">website</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="education-item">
+                    <div class="experience-title">Bachelor's in Applied Information Science</div>
+                    <div class="experience-company">PXL University College, Hasselt</div>
+                    <div class="experience-period">September 2017 - June 2021</div>
+                    <div class="experience-description">
+                        Comprehensive knowledge in programming, database design, web development, and software engineering principles.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills-grid-full">
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <ul class="skill-list">
+                    <li>Angular (Advanced)</li>
+                    <li>TypeScript (Advanced)</li>
+                    <li>HTML5 & CSS3 (Expert)</li>
+                    <li>SASS (Advanced)</li>
+                    <li>RxJS (Advanced)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <ul class="skill-list">
+                    <li>.NET & C# (Advanced)</li>
+                    <li>Entity Framework (Advanced)</li>
+                    <li>REST APIs (Advanced)</li>
+                    <li>GraphQL (Intermediate)</li>
+                    <li>MartenDB (Intermediate)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <ul class="skill-list">
+                    <li>Azure Kubernetes (AKS)</li>
+                    <li>Azure Functions</li>
+                    <li>Azure DevOps Pipelines</li>
+                    <li>Microsoft Entra ID</li>
+                    <li>Application Insights</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Databases</h4>
+                <ul class="skill-list">
+                    <li>SQL Server (Advanced)</li>
+                    <li>PostgreSQL (Advanced)</li>
+                    <li>Azure Cosmos DB</li>
+                    <li>Event Sourcing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Development</h4>
+                <ul class="skill-list">
+                    <li>Agile/Scrum</li>
+                    <li>CI/CD</li>
+                    <li>Microservices</li>
+                    <li>Git & Version Control</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Soft Skills</h4>
+                <ul class="skill-list">
+                    <li>Technical Leadership</li>
+                    <li>Team Mentoring</li>
+                    <li>Architecture Design</li>
+                    <li>Problem Solving</li>
+                    <li>Stakeholder Communication</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <div style="font-size: 10px; color: #7f8c8d;">
+            <strong>Passionate Developer • Creative Problem Solver • Team Collaborator • Continuous Learner</strong>
+        </div>
+    </div>
+
+    <div style="page-break-before: always;"></div>
+
+    <!-- <div class="header">
+        <h1>Joren Vanderzande</h1>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Key Projects</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="project">
+                <div class="project-title">Consumer Credit & Mortgage Management Portal</div>
+                <div class="project-period">October 2021 - May 2024</div>
+                <div class="project-description">
+                    Led development of a digital portal enabling end users to view and manage mortgages and consumer credits. Contributed across full stack and grew into technical team lead role, making architectural decisions and guiding the team.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Admin Portal for Course Management</div>
+                <div class="project-period">May 2024 - Present</div>
+                <div class="project-description">
+                    Full stack development of admin portal for educational course management within a union. Features event sourcing for data storage, GraphQL for querying, running in Kubernetes environment.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Municipality-Government Integration Platform</div>
+                <div class="project-period">November 2022 - May 2024</div>
+                <div class="project-description">
+                    Maintained and extended integration platform between municipalities and Flemish government. Set up robust CI/CD versioning and deployment system from scratch.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Mock WMS System for ERP Testing</div>
+                <div class="project-period">August 2022 - May 2023</div>
+                <div class="project-description">
+                    Built lightweight CRUD application simulating warehouse management system functionality for ERP testing. Enabled client to validate ERP updates without full WMS environment.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">CMS Replacement & Data Dashboard</div>
+                <div class="project-period">June 2023 - May 2024</div>
+                <div class="project-description">
+                    Frontend development for replacing an outdated in-house CMS system with Umbraco. Additionally, developed an attractive and user-friendly dashboard presenting key data insights for a client in the farming sector.
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Banking PWA Restaurant Booking Extension</div>
+                <div class="project-period">August 2021 - October 2021</div>
+                <div class="project-description">
+                    Contributed to the expansion of an existing progressive web app in the banking sector by implementing a restaurant booking feature. Developed the frontend based on Adobe XD designs using the client's custom component library.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" style="text-align: center; margin-top: 30px;">
+        <div style="font-size: 10px; color: #7f8c8d;">
+            <strong>Passionate Developer • Creative Problem Solver • Team Collaborator • Continuous Learner</strong>
+        </div>
+    </div> -->
+</body>
+</html>
