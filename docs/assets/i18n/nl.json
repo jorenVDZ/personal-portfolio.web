@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Over <b>Mij</b>",
-    "content": "<p>Ik studeerde <b>Toegepaste Informatica</b> aan de <b>Hogeschool PXL</b> en werk momenteel als <b>full-stack .NET developer</b>, met een sterke voorkeur voor <b>frontend development</b>. Ik ben steeds op zoek naar manieren om te groeien als ontwikkelaar, met een bijzondere interesse in <b>DevOps</b> en <b>softwarearchitectuur</b>.</p><p>Wat ik echt graag doe, is <b>mentoren</b>. Of het nu gaat om het ondersteunen van <b>collega's</b> of het begeleiden van <b>stagiairs</b>, ik haal veel voldoening uit het delen van kennis en het helpen ontwikkelen van anderen.</p><p>In mijn vrije tijd speel ik graag <b>videogames</b> en ga ik graag <b>kamperen</b>. Als ik in de natuur ben, vind ik <b>kajakken</b> heerlijk, het is een fijne manier om tot rust te komen en te genieten van de omgeving.</p>",
+    "content": "<p>Ik studeerde <b>Toegepaste Informatica</b> aan de <b>Hogeschool PXL</b> en werk momenteel als <b>full-stack .NET developer</b>, met een duidelijke voorkeur voor <b>frontend development</b>. Ik ben steeds op zoek naar manieren om te groeien als ontwikkelaar, met een bijzondere interesse in <b>DevOps</b> en <b>softwarearchitectuur</b>.</p><p>Wat ik echt graag doe, is <b>mentoren</b>. Of het nu gaat om het ondersteunen van <b>collega's</b> of het begeleiden van <b>stagiairs</b>, ik haal veel voldoening uit het delen van kennis en het helpen ontwikkelen van anderen.</p><p>In mijn vrije tijd speel ik graag <b>videogames</b> en ga ik graag <b>kamperen</b>. Als ik in de natuur ben, vind ik <b>kajakken</b> heerlijk, het is een fijne manier om tot rust te komen en te genieten van de omgeving.</p>",
     "skill1": "Passie voor development",
     "skill2": "Creatieve probleemoplosser",
     "skill3": "Teamspeler",
@@ -40,7 +40,7 @@
       "angular": "Modern TypeScript-gebaseerd webapplicatie framework voor het bouwen van dynamische single-page applicaties",
       "typescript": "Getypeerde superset van JavaScript die statische type definities toevoegt voor een betere ontwikkelervaring",
       "html5": "Nieuwste markup taal standaard voor het structureren en presenteren van content op het web",
-      "css3": "Geavanceerde styling taal voor het ontwerpen van prachtige en responsieve webinterfaces",
+      "css3": "Geavanceerde stijltalen voor het ontwerpen van aantrekkelijke en responsieve webinterfaces",
       "sass": "Krachtige CSS preprocessor met geneste syntax, variabelen en mixins voor onderhoudbare stylesheets",
       "rxjs": "Reactieve programmeerbibliotheek die observables gebruikt voor het verwerken van asynchrone datastromen"
     },
@@ -59,7 +59,7 @@
       "functions": "Serverless compute service voor het uitvoeren van event-driven code zonder servers te beheren",
       "entraId": "Uitgebreide identiteits- en toegangsbeheer service (voorheen Azure Active Directory)",
       "devOpsPipelines": "Continue integratie en deployment automatisering voor het bouwen, testen en deployen van applicaties",
-      "applicationInsights": "Applicatie performance monitoring service voor het detecteren en diagnosticeren van problemen in live applicaties"
+      "applicationInsights": "Dienst voor het monitoren van applicatieprestaties en het opsporen van problemen in live toepassingen"
     },
     "testing": {
       "jest": "Prettig JavaScript test framework met ingebouwde snapshot testing en mocking mogelijkheden",
@@ -87,12 +87,12 @@
       "title": "Toegepaste Informatica",
       "institution": "Hogeschool PXL",
       "period": "September 2017 - Juni 2021",
-      "description": "Bachelor diploma in Toegepaste Informatica met focus op software ontwikkeling en informatiesystemen. Uitgebreide kennis opgedaan in programmeren, database design, web development en software engineering principes."
+      "description": "Bachelor Toegepaste Informatica met focus op softwareontwikkeling en informatiesystemen. Uitgebreide kennis opgedaan in programmeren, databaseontwerp, webdevelopment en software engineering."
     },
     "project": {
       "bankingAppRestaurantBooking": {
         "title": "Uitbreiding van bestaande banking PWA met restaurant reserveringsfunctionaliteit",
-        "description": "Bijgedragen aan de uitbreiding van een bestaande progressive web app in de bancaire sector door het implementeren van een restaurant reserveringsfunctie. Frontend ontwikkeld op basis van Adobe XD ontwerpen van de klant, gebruik makend van hun custom component bibliotheek. Ook kleine backend aanpassingen gedaan voor goede integratie met de restaurant reserverings-API."
+        "description": "Bijgedragen aan de uitbreiding van een bestaande progressive web app (PWA) in de bankensector door een restaurantreserveringsfunctie toe te voegen. Frontend gebouwd op basis van Adobe XD-designs van de klant, gebruikmakend van hun eigen componentbibliotheek. Ook kleine backendaanpassingen gedaan voor een goede integratie met de reserverings-API."
       },
       "creditPortal": {
         "title": "Ontwikkeling en leiding van een consumptiekrediet en hypotheek beheerportaal",
@@ -100,11 +100,11 @@
       },
       "publicMunicipality": {
         "title": "Onderhoud en infrastructuur upgrade van een gemeente-overheid integratieplatform",
-        "description": "Onderhouden en uitgebreid van een bestaand integratieplatform dat communicatie tussen gemeenten en de Vlaamse overheid faciliteert. De applicatie transformeerde inkomende data van gemeenten naar een door de overheid vereist formaat en ondersteunde aanvullende niet-gouvernementele extensies. Eigenaarschap genomen van het CI/CD proces door een robuust versioning en deployment systeem vanaf nul op te zetten, en kleine nieuwe functies geïmplementeerd tijdens de onderhoudsfase."
+        "description": "Onderhouden en uitbreiden van een bestaand integratieplatform dat communicatie tussen gemeenten en de Vlaamse overheid faciliteert. De applicatie transformeerde inkomende data van gemeenten naar het vereiste formaat van de overheid en ondersteunde ook uitbreidingen van andere organisaties. Ik nam het voortouw in het CI/CD-proces door een robuust versie- en deploysysteem vanaf nul op te zetten, en implementeerde kleine nieuwe functies tijdens de onderhoudsfase."
       },
       "mockWms": {
         "title": "Ontwikkeling van een mock WMS systeem ter ondersteuning van ERP testing",
-        "description": "Voornamelijk gewerkt als frontend developer terwijl ik actief betrokken was bij de klant door tweewekelijkse demo's en meetings. Een lichtgewicht CRUD applicatie gebouwd om de essentiële functionaliteit van een warehouse management systeem (WMS) te simuleren voor testdoeleinden. Het mock systeem stelde de klant in staat om updates aan hun ERP systeem te valideren zonder telkens de volledige WMS omgeving te hoeven opstarten, wat het ontwikkel- en testproces stroomlijnde."
+        "description": "Voornamelijk gewerkt als frontend developer terwijl ik actief betrokken was bij de klant via tweewekelijkse demo's en meetings. Een eenvoudige CRUD-app gebouwd die de belangrijkste functies van een warehouse management systeem (WMS) simuleert voor testdoeleinden. Dit maakte het mogelijk om ERP-updates te testen zonder telkens het volledige WMS-systeem op te starten, wat het ontwikkel- en testproces versnelde."
       },
       "cmsDashboard": {
         "title": "Frontend ontwikkeling voor CMS vervanging en data dashboard in de landbouwsector",
@@ -112,7 +112,7 @@
       },
       "publicAdminPortal": {
         "title": "Full stack ontwikkeling van een admin portaal voor cursusbeheer binnen een vakbond",
-        "description": "Gewerkt als full stack developer aan het admin portaal. Het hoofdkenmerk waaraan ik werkte was een platform voor het beheren van educatieve cursussen. Met dit platform kan de vakbond cursusinformatie opslaan, deelnemers registreren, aanwezigheid bijhouden en andere essentiële data onderhouden. Het systeem gebruikt event sourcing voor data opslag en GraphQL voor querying. Alles draait in een Kubernetes omgeving."
+        "description": "Werkend als fullstack ontwikkelaar aan het beheerdersportaal, waarbij mijn primaire focus lag op een platform voor het beheren van opleidingen. Het platform stelt de vakbond in staat om cursusinformatie op te slaan, deelnemers te registreren, aanwezigheden bij te houden en andere essentiële data te beheren. De technische architectuur maakt gebruik van event sourcing en GraphQL, en draait volledig binnen een Kubernetes-omgeving."
       },
       "viewProjects": "Bekijk Projecten",
       "projects": "Projecten",

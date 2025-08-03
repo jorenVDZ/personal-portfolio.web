@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "About <b>Me</b>",
-    "content": "<p>I studied <b>Applied Information Science</b> at <b>PXL University College</b> and currently work as a <b>full-stack .NET developer</b>, with a strong preference for <b>frontend development</b>. I'm always looking to grow as a developer, and I have a special interest in topics like <b>DevOps</b> and <b>software architecture</b>.</p><p>Something I truly enjoy is <b>mentoring</b>. Whether I'm supporting <b>colleagues</b> or guiding <b>interns</b>, I find it rewarding to share knowledge and help others develop their skills.</p><p>In my free time, I like <b>playing video games</b> and <b>going camping</b>. When I'm outdoors, I really enjoy <b>kayaking</b>, it's a great way to relax and enjoy nature.</p>",
+    "content": "<p>I studied <b>Applied Information Science</b> at <b>PXL University College</b> and currently work as a <b>full-stack .NET developer</b>, with a strong liking for <b>frontend development</b>. I'm always looking to grow as a developer, and I have a special interest in topics like <b>DevOps</b> and <b>software architecture</b>.</p><p>Something I truly enjoy is <b>mentoring</b>. Whether I'm supporting <b>colleagues</b> or guiding <b>interns</b>, I find it rewarding to share knowledge and help others develop their skills.</p><p>In my free time, I like <b>playing video games</b> and <b>going camping</b>. When I'm outdoors, I really enjoy <b>kayaking</b>, it's a great way to relax and enjoy nature.</p>",
     "skill1": "Passionate Developer",
     "skill2": "Creative Problem Solver",
     "skill3": "Team Collaborator",
@@ -92,7 +92,7 @@
     "project": {
       "bankingAppRestaurantBooking": {
         "title": "Expansion of existing banking PWA with restaurant booking functionality",
-        "description": "Contributed to the expansion of an existing progressive web app in the banking sector by implementing a restaurant booking feature. Developed the frontend based on Adobe XD designs provided by the client, using their custom component library. Also made minor backend adjustments to ensure proper integration with the restaurant booking API."
+        "description": "Contributed to the expansion of an existing progressive web app (PWA) in the banking sector by implementing a restaurant booking feature. Developed the frontend based on Adobe XD designs provided by the client, using their custom component library. Also made minor backend adjustments to ensure proper integration with the restaurant booking API."
       },
       "creditPortal": {
         "title": "Development and leadership of a consumer credit and mortgage management portal",
@@ -112,7 +112,7 @@
       },
       "publicAdminPortal": {
         "title": "Full stack development of an admin portal for course management within a union",
-        "description": "Worked as a full stack developer on the admin portal. The main feature I worked on was a platform for managing educational courses. With this platform, the union can store course information, register participants, record attendance, and maintain other essential data. The system uses event sourcing for data storage and GraphQL for querying. Everything runs in a Kubernetes environment."
+        "description": "Working as a full stack developer on the admin portal, with my primary focus being on a platform for managing educational courses. The platform enables the union to store course details, register participants, track attendance, and manage other essential data. The underlying architecture uses event sourcing and GraphQL, running entirely within a Kubernetes environment."
       },
       "viewProjects": "View Projects",
       "projects": "Projects",
