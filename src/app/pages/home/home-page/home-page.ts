@@ -3,12 +3,10 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home-page',
-  imports: [
-    TranslatePipe
-  ],
+  imports: [TranslatePipe],
   templateUrl: './home-page.html',
-  styleUrl: './home-page.scss'
 })
 export class HomePage {
-
+  stack = ['Angular', 'TypeScript', '.NET', 'GraphQL', 'Azure', 'Kubernetes'];
+  go(id: string) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); }
 }

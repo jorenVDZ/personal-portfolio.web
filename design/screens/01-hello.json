@@ -1,0 +1,148 @@
+{
+  "success": true,
+  "data": {
+    "resource": "screen",
+    "id": "56e0cee6ce3749e093070bb49090b6ee",
+    "project": "12613721072534802508",
+    "title": "Joren — Developer Portfolio Hero",
+    "device": "DESKTOP",
+    "screenType": "DESIGN",
+    "canvasUrl": "https://stitch.google.com/projects/12613721072534802508?node-id=56e0cee6ce3749e093070bb49090b6ee",
+    "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vy0UHBGazpcws-sCu7UfeWq2oA8pkigYLSruguu_kfMGPR0RmmPewQowi0Y-6liGexDbLg1WRylg1HuHotQNk4KuRzDtN8MZN53Y_BmkxY_acYpaV-qsVk7YvEXl_p0A3Ey5uxBd987dJll-nuShur3Yk1r0Xb6vuK0YZHlhx4Nym9hyTjh2MXlOFDkv09-KwMRXZcM04AtdPxHhLYbX3FNh1kweEQRAMV5BmIHaXhr7Fs9O_j1l-LGehv",
+    "htmlCode": {
+      "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzNmYjA4OWRiOGVhZTQwMThiNjcxZGZkZDU3YjlmMTRiEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+      "mimeType": "text/html",
+      "name": "projects/12613721072534802508/files/5d8d4b03d3d44f39acef9dd39b258a71"
+    },
+    "rawScreen": {
+      "outputComponents": [
+        {
+          "design": {
+            "screens": [
+              {
+                "designSystem": {
+                  "designSystem": {
+                    "displayName": "Portfolio Scrollytelling",
+                    "theme": {
+                      "bodyFont": "INTER",
+                      "colorMode": "DARK",
+                      "customColor": "#34D399",
+                      "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+                      "headlineFont": "INTER",
+                      "labelFont": "INTER",
+                      "overrideNeutralColor": "#0F172A",
+                      "roundness": "ROUND_TWELVE"
+                    }
+                  },
+                  "name": "assets/6907210889568670700",
+                  "version": "1"
+                },
+                "deviceType": "DESKTOP",
+                "generatedBy": "figaro_agent",
+                "height": "2090",
+                "htmlCode": {
+                  "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzNmYjA4OWRiOGVhZTQwMThiNjcxZGZkZDU3YjlmMTRiEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+                  "mimeType": "text/html",
+                  "name": "projects/12613721072534802508/files/5d8d4b03d3d44f39acef9dd39b258a71"
+                },
+                "id": "56e0cee6ce3749e093070bb49090b6ee",
+                "name": "projects/12613721072534802508/screens/56e0cee6ce3749e093070bb49090b6ee",
+                "prompt": "Design a portfolio landing hero for Joren, Full-Stack Web Developer.\nPLATFORM: Desktop-first web design.\nTHEME & PALETTE: Dark slate slate-900 / slate-950 background with emerald green (#34D399) glowing accents and clean white/slate typography.\nBACKGROUND: Subtle interactive or CSS-rendered starfield canvas/background with soft glowing nebula dust or twinkling ambient stars.\nSTRUCTURE & LAYOUT:\n1. Header / Top Navigation: Minimalist bar with logo 'Joren', navigation links (About, Career, Skills & AI, Contact), 'Resume' and emerald accent CTA 'Get in Touch'.\n2. Right edge: Slim vertical progress rail fixed on the right margin with 5 indicator dots and chapter labels:\n   - 1. Hello (ACTIVE state: glowing emerald dot with pulse ring, highlighted label)\n   - 2. Person\n   - 3. Career\n   - 4. Skills & AI\n   - 5. Contact\n3. Centered Hero section:\n   - Small badge or pill tag: 'AVAILABLE FOR NEW PROJECTS' with an emerald pulsating status indicator.\n   - Main Headline: \"I'm Joren, a Full-Stack Web Developer\" in bold, modern sans-serif typography with emerald gradient highlight.\n   - Subtitle: \"Loves clean code, smooth interfaces, and well-oiled pipelines\" in crisp slate-300 with high readability.\n   - Action buttons: Primary emerald button \"View My Work\" or \"Explore Projects\" and secondary ghost border button \"Read My Story\" / \"Tech Stack\".\n   - Quick tech stack badges or floating developer metrics: e.g. React, Next.js, TypeScript, Node.js, Cloud / DevOps.\n4. Bottom scroll cue:\n   - Subtle scroll-down cue with mouse icon or down arrow animation and text \"Scroll to explore\".\nEnsure sleek spacing, modern developer aesthetic, smooth dark mode styling matching {{DATA:DESIGN_SYSTEM:DESIGN_SYSTEM_1}}.",
+                "screenMetadata": {
+                  "agentType": "PRO_AGENT",
+                  "status": "COMPLETE"
+                },
+                "screenType": "DESIGN",
+                "screenshot": {
+                  "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vy0UHBGazpcws-sCu7UfeWq2oA8pkigYLSruguu_kfMGPR0RmmPewQowi0Y-6liGexDbLg1WRylg1HuHotQNk4KuRzDtN8MZN53Y_BmkxY_acYpaV-qsVk7YvEXl_p0A3Ey5uxBd987dJll-nuShur3Yk1r0Xb6vuK0YZHlhx4Nym9hyTjh2MXlOFDkv09-KwMRXZcM04AtdPxHhLYbX3FNh1kweEQRAMV5BmIHaXhr7Fs9O_j1l-LGehv",
+                  "name": "projects/12613721072534802508/files/be7cbd199143452f84d37a4570d71480"
+                },
+                "theme": {
+                  "bodyFont": "INTER",
+                  "colorMode": "DARK",
+                  "customColor": "#34D399",
+                  "headlineFont": "INTER",
+                  "labelFont": "INTER",
+                  "overrideNeutralColor": "#0F172A",
+                  "roundness": "ROUND_TWELVE"
+                },
+                "title": "Joren — Developer Portfolio Hero",
+                "width": "2560"
+              }
+            ],
+            "theme": {}
+          }
+        },
+        {
+          "text": "Here is the desktop portfolio landing hero for **Joren, Full-Stack Web Developer**:\n\n### Key Features & Design Choices:\n- **Atmospheric Starfield**: Deep slate-950 backdrop with ambient twinkling stars and subtle emerald glow for a polished modern developer feel.\n- **Centered Hero Layout**:\n  - Availability pill badge (`AVAILABLE FOR NEW PROJECTS`) with glowing indicator.\n  - Bold headline: *\"I'm Joren, a Full-Stack Web Developer\"* featuring emerald gradient emphasis.\n  - Subtitle: *\"Loves clean code, smooth interfaces, and well-oiled pipelines\"*, backed by dual CTA buttons (*Explore Projects* & *Read My Story*).\n  - Quick-glance core engineering stack tags (*React, Next.js, TypeScript, Node.js, Cloud & DevOps, AI Integration*).\n- **Vertical Progress Rail**: Slim chapter navigation anchored to the right margin with 5 chapters (*Hello*, *Person*, *Career*, *Skills & AI*, *Contact*), where the first chapter (*Hello*) is set to active with an emerald beacon ring.\n- **Scroll Cue**: Subtle animated scroll mouse indicator anchored to guide visitor momentum down the page."
+        },
+        {
+          "suggestion": "Add the 'Person' (About) section below the hero"
+        },
+        {
+          "suggestion": "Create the 'Career' timeline section"
+        },
+        {
+          "suggestion": "Design the interactive 'Skills & AI' showcase"
+        }
+      ],
+      "projectId": "12613721072534802508",
+      "sessionId": "888290590091172535",
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Portfolio Scrollytelling",
+          "theme": {
+            "bodyFont": "INTER",
+            "colorMode": "DARK",
+            "customColor": "#34D399",
+            "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+            "headlineFont": "INTER",
+            "labelFont": "INTER",
+            "overrideNeutralColor": "#0F172A",
+            "roundness": "ROUND_TWELVE"
+          }
+        },
+        "name": "assets/6907210889568670700",
+        "version": "1"
+      },
+      "deviceType": "DESKTOP",
+      "generatedBy": "figaro_agent",
+      "height": "2090",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzNmYjA4OWRiOGVhZTQwMThiNjcxZGZkZDU3YjlmMTRiEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12613721072534802508/files/5d8d4b03d3d44f39acef9dd39b258a71"
+      },
+      "id": "56e0cee6ce3749e093070bb49090b6ee",
+      "name": "projects/12613721072534802508/screens/56e0cee6ce3749e093070bb49090b6ee",
+      "prompt": "Design a portfolio landing hero for Joren, Full-Stack Web Developer.\nPLATFORM: Desktop-first web design.\nTHEME & PALETTE: Dark slate slate-900 / slate-950 background with emerald green (#34D399) glowing accents and clean white/slate typography.\nBACKGROUND: Subtle interactive or CSS-rendered starfield canvas/background with soft glowing nebula dust or twinkling ambient stars.\nSTRUCTURE & LAYOUT:\n1. Header / Top Navigation: Minimalist bar with logo 'Joren', navigation links (About, Career, Skills & AI, Contact), 'Resume' and emerald accent CTA 'Get in Touch'.\n2. Right edge: Slim vertical progress rail fixed on the right margin with 5 indicator dots and chapter labels:\n   - 1. Hello (ACTIVE state: glowing emerald dot with pulse ring, highlighted label)\n   - 2. Person\n   - 3. Career\n   - 4. Skills & AI\n   - 5. Contact\n3. Centered Hero section:\n   - Small badge or pill tag: 'AVAILABLE FOR NEW PROJECTS' with an emerald pulsating status indicator.\n   - Main Headline: \"I'm Joren, a Full-Stack Web Developer\" in bold, modern sans-serif typography with emerald gradient highlight.\n   - Subtitle: \"Loves clean code, smooth interfaces, and well-oiled pipelines\" in crisp slate-300 with high readability.\n   - Action buttons: Primary emerald button \"View My Work\" or \"Explore Projects\" and secondary ghost border button \"Read My Story\" / \"Tech Stack\".\n   - Quick tech stack badges or floating developer metrics: e.g. React, Next.js, TypeScript, Node.js, Cloud / DevOps.\n4. Bottom scroll cue:\n   - Subtle scroll-down cue with mouse icon or down arrow animation and text \"Scroll to explore\".\nEnsure sleek spacing, modern developer aesthetic, smooth dark mode styling matching {{DATA:DESIGN_SYSTEM:DESIGN_SYSTEM_1}}.",
+      "screenMetadata": {
+        "agentType": "PRO_AGENT",
+        "status": "COMPLETE"
+      },
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vy0UHBGazpcws-sCu7UfeWq2oA8pkigYLSruguu_kfMGPR0RmmPewQowi0Y-6liGexDbLg1WRylg1HuHotQNk4KuRzDtN8MZN53Y_BmkxY_acYpaV-qsVk7YvEXl_p0A3Ey5uxBd987dJll-nuShur3Yk1r0Xb6vuK0YZHlhx4Nym9hyTjh2MXlOFDkv09-KwMRXZcM04AtdPxHhLYbX3FNh1kweEQRAMV5BmIHaXhr7Fs9O_j1l-LGehv",
+        "name": "projects/12613721072534802508/files/be7cbd199143452f84d37a4570d71480"
+      },
+      "theme": {
+        "bodyFont": "INTER",
+        "colorMode": "DARK",
+        "customColor": "#34D399",
+        "headlineFont": "INTER",
+        "labelFont": "INTER",
+        "overrideNeutralColor": "#0F172A",
+        "roundness": "ROUND_TWELVE"
+      },
+      "title": "Joren — Developer Portfolio Hero",
+      "width": "2560",
+      "agentText": "Here is the desktop portfolio landing hero for **Joren, Full-Stack Web Developer**:\n\n### Key Features & Design Choices:\n- **Atmospheric Starfield**: Deep slate-950 backdrop with ambient twinkling stars and subtle emerald glow for a polished modern developer feel.\n- **Centered Hero Layout**:\n  - Availability pill badge (`AVAILABLE FOR NEW PROJECTS`) with glowing indicator.\n  - Bold headline: *\"I'm Joren, a Full-Stack Web Developer\"* featuring emerald gradient emphasis.\n  - Subtitle: *\"Loves clean code, smooth interfaces, and well-oiled pipelines\"*, backed by dual CTA buttons (*Explore Projects* & *Read My Story*).\n  - Quick-glance core engineering stack tags (*React, Next.js, TypeScript, Node.js, Cloud & DevOps, AI Integration*).\n- **Vertical Progress Rail**: Slim chapter navigation anchored to the right margin with 5 chapters (*Hello*, *Person*, *Career*, *Skills & AI*, *Contact*), where the first chapter (*Hello*) is set to active with an emerald beacon ring.\n- **Scroll Cue**: Subtle animated scroll mouse indicator anchored to guide visitor momentum down the page.",
+      "suggestions": [
+        "Add the 'Person' (About) section below the hero",
+        "Create the 'Career' timeline section",
+        "Design the interactive 'Skills & AI' showcase"
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vy0UHBGazpcws-sCu7UfeWq2oA8pkigYLSruguu_kfMGPR0RmmPewQowi0Y-6liGexDbLg1WRylg1HuHotQNk4KuRzDtN8MZN53Y_BmkxY_acYpaV-qsVk7YvEXl_p0A3Ey5uxBd987dJll-nuShur3Yk1r0Xb6vuK0YZHlhx4Nym9hyTjh2MXlOFDkv09-KwMRXZcM04AtdPxHhLYbX3FNh1kweEQRAMV5BmIHaXhr7Fs9O_j1l-LGehv"
+    }
+  }
+}

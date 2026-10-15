@@ -1,56 +1,40 @@
-<nav class="custom-navigation">
-  <div class="nav-container">
-    <!-- Hamburger Menu Button (Mobile Only) -->
-    <button class="hamburger" (click)="toggleMobileMenu()">
-      <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'" class="hamburger-icon"></i>
+<nav class="bg-slate-950 border-b border-slate-800">
+  <div class="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between gap-4">
+    <button type="button" class="flex items-center gap-2 font-semibold text-slate-100" (click)="scrollTo('home')">
+      <img src="assets/favicon.svg" alt="" class="h-7 w-auto">Joren
     </button>
 
-
-    <!-- Desktop Menu -->
-    <ul class="nav-menu desktop-menu">
-      @for (item of items; track item.label; let i = $index) {
-        <li class="nav-item"
-            [class.active]="activeIndex === i"
-            (click)="selectItem(item, i)">
-          <a class="nav-link">
-            @if (item.label === 'Skills') {
-              <img src="assets/stats.svg" alt="Stats" class="nav-icon stats-icon">
-            } @else {
-              <i [class]="item.icon" class="nav-icon"></i>
-            }
-            <span class="nav-label">{{ item.translationKey | translate }}</span>
-          </a>
+    <ul class="hidden md:flex items-center gap-1">
+      @for (id of ids; track id; let i = $index) {
+        <li>
+          <button type="button" (click)="scrollTo(id)"
+                  class="px-3 py-1 text-sm uppercase tracking-wide border-b-2 transition-colors"
+                  [class]="activeIndex === i ? 'text-slate-100 border-emerald-400' : 'text-slate-300 border-transparent hover:text-slate-100'">
+            {{ 'navigation.' + id | translate }}
+          </button>
         </li>
       }
     </ul>
 
-    <!-- Mobile Menu -->
-    <ul class="nav-menu mobile-menu" [class.open]="isMobileMenuOpen">
-      @for (item of items; track item.label; let i = $index) {
-        <li class="nav-item"
-            [class.active]="activeIndex === i"
-            (click)="selectItem(item, i)">
-          <a class="nav-link">
-            @if (item.label === 'Skills') {
-              <img src="assets/stats.svg" alt="Stats" class="nav-icon stats-icon">
-            } @else {
-              <i [class]="item.icon" class="nav-icon"></i>
-            }
-            <span class="nav-label">{{ item.translationKey | translate }}</span>
-          </a>
-        </li>
-      }
-    </ul>
-
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-      <div class="language-toggle">
-        <div class="custom-language-switch" [class.checked]="currentLanguage === 'nl'" (click)="toggleLanguage()">
-          <span class="background-label left">EN</span>
-          <span class="background-label right">NL</span>
-          <div class="switch-slider"></div>
-        </div>
+    <div class="flex items-center gap-2">
+      <div class="custom-language-switch" [class.checked]="currentLanguage === 'nl'" (click)="toggleLanguage()"
+           role="switch" [attr.aria-checked]="currentLanguage === 'nl'" aria-label="Language" tabindex="0" (keydown.enter)="toggleLanguage()">
+        <span class="background-label left">EN</span>
+        <span class="background-label right">NL</span>
+        <div class="switch-slider"></div>
       </div>
+      <a [href]="'assets/cv-' + currentLanguage + '.pdf'" download class="hidden sm:inline-flex btn-outline !py-1.5 !px-3 text-sm">{{ 'navigation.resume' | translate }}</a>
+      <button type="button" (click)="scrollTo('contact')" class="hidden sm:inline-flex btn-primary !py-1.5 !px-3 text-sm">{{ 'navigation.getInTouch' | translate }}</button>
+      <button type="button" class="md:hidden px-2 text-slate-100" (click)="isMobileMenuOpen = !isMobileMenuOpen" aria-label="Menu">
+        <i [class]="isMobileMenuOpen ? 'pi pi-times' : 'pi pi-bars'"></i>
+      </button>
     </div>
   </div>
+  @if (isMobileMenuOpen) {
+    <ul class="md:hidden border-t border-slate-800 px-6 py-2">
+      @for (id of ids; track id) {
+        <li><button type="button" class="w-full text-left py-2 text-slate-300" (click)="scrollTo(id)">{{ 'navigation.' + id | translate }}</button></li>
+      }
+    </ul>
+  }
 </nav>

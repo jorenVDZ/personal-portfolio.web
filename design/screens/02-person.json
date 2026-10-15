@@ -1,0 +1,148 @@
+{
+  "success": true,
+  "data": {
+    "resource": "screen",
+    "id": "4d7fc374a41d47568705b916bb495a16",
+    "project": "12613721072534802508",
+    "title": "Person Chapter - Scrollytelling",
+    "device": "DESKTOP",
+    "screenType": "DESIGN",
+    "canvasUrl": "https://stitch.google.com/projects/12613721072534802508?node-id=4d7fc374a41d47568705b916bb495a16",
+    "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V_icCT8ZBmm8Wtrb_TjlWsWLS7DUPvHkZTNlAU4161xvQeGFr8FgZsoeJLUH0zACWUSPCrMiMTee3ZF8eezoAPqwi6JGsLAYIg1wfumGtqarUAAPCCYTAMjX5qTwRNseF-98h1ud2BVQa19qdrLyTrH6fBo5dGzjk3XLuJesW02WxorxC44v17G100DS-TpB1h8juwqXUPrcevrQleBjn4MRTCoUZey8KAZDGNBnv2vkxGMQc6SzT9NCo",
+    "htmlCode": {
+      "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2ZlNTZlMGY3MGMzYTQ4NzRhYjNmMmFmYmQ4YmJlMjU4EgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+      "mimeType": "text/html",
+      "name": "projects/12613721072534802508/files/3848f0a76af24414bfec26cb6a1da84d"
+    },
+    "rawScreen": {
+      "outputComponents": [
+        {
+          "design": {
+            "screens": [
+              {
+                "designSystem": {
+                  "designSystem": {
+                    "displayName": "Portfolio Scrollytelling",
+                    "theme": {
+                      "bodyFont": "INTER",
+                      "colorMode": "DARK",
+                      "customColor": "#34D399",
+                      "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+                      "headlineFont": "INTER",
+                      "labelFont": "INTER",
+                      "overrideNeutralColor": "#0F172A",
+                      "roundness": "ROUND_TWELVE"
+                    }
+                  },
+                  "name": "assets/6907210889568670700",
+                  "version": "1"
+                },
+                "deviceType": "DESKTOP",
+                "generatedBy": "figaro_agent",
+                "height": "2354",
+                "htmlCode": {
+                  "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2ZlNTZlMGY3MGMzYTQ4NzRhYjNmMmFmYmQ4YmJlMjU4EgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+                  "mimeType": "text/html",
+                  "name": "projects/12613721072534802508/files/3848f0a76af24414bfec26cb6a1da84d"
+                },
+                "id": "4d7fc374a41d47568705b916bb495a16",
+                "name": "projects/12613721072534802508/screens/4d7fc374a41d47568705b916bb495a16",
+                "prompt": "Create the pinned narrative chapter 'Person' for a developer/designer portfolio in desktop view.\n\nKey specifications and layout:\n1. Top Bar / Header:\n   - Consistent with TopNavBar component: Minimal slate-900/80 background with backdrop blur, subtle border bottom, logo on left, navigation links ('Hello', 'Person', 'Career', 'Skills & AI', 'Contact'), with 'Person' highlighted in emerald accent (#34D399), and a 'Resume' secondary/ghost action button.\n\n2. Main Scrollytelling Two-Column Canvas (Desktop, max-w-7xl mx-auto px-10 py-16 min-h-[calc(100vh-80px)] flex items-start gap-16 relative):\n   - Left Column (Text narrative steps, approx 50-55% width):\n     - Chapter label pill: \"02 / CHAPTER\" with subtle emerald border and badge styling.\n     - Section Title: \"Beyond the Screen: The Person Behind the Code\" or \"Who I am when the laptop closes\".\n     - Three distinct text steps arranged sequentially with clear visual indicators:\n       * Step 1 (Dimmed/Past step, opacity-45):\n         - Number / Tag: \"01 · People & Growth\"\n         - Heading: \"Mentoring colleagues and interns\"\n         - Body: \"Dedicated to lifting others up—running 1:1 design reviews, engineering pair sessions, and building onboarding workshops for junior developers.\"\n       * Step 2 (ACTIVE STEP - Full Opacity 100%, emerald accent indicator or glowing active border highlight, elevated card / distinct visual prominence):\n         - Number / Tag: \"02 · Digital Worlds\"\n         - Heading: \"Video games & interactive storytelling\"\n         - Body: \"Deeply passionate about world-building, thoughtful narrative mechanics, and game design theory. From atmospheric indie adventures to complex tactical sims.\"\n         - Active badges: [\"Narrative Design\", \"Elden Ring & Outer Wilds\", \"Game Jams\"]\n       * Step 3 (Dimmed/Upcoming step, opacity-45):\n         - Number / Tag: \"03 · The Great Outdoors\"\n         - Heading: \"Camping and kayaking\"\n         - Body: \"Disconnecting to reconnect. Navigating winding rivers in a kayak, backcountry trails, and stargazing around off-grid campfires across the Pacific Northwest.\"\n   \n   - Right Column (Sticky photo card, approx 45% width, sticky top-28):\n     - High-craft rounded-2xl or rounded-3xl container with sleek dark slate background, emerald border sheen / ring, and subtle ambient glow.\n     - Profile/Lifestyle photo matching the active chapter theme (a warm, cinematic shot of a designer/developer with ambient lighting or headphones/setup or lifestyle portrait).\n     - Caption and metadata overlay at the bottom:\n       * Pill badge: \"Current Focus: Video Games & Interactive Storytelling\" with a glowing emerald pulse dot.\n       * Caption text: \"Exploring how immersive world mechanics inspire intuitive, tactile digital product interfaces.\"\n       * Location / timestamp or mini stat snippet: \"Offline Hours · Pacific Northwest\".\n\n3. Scrollytelling Progress Rail (Fixed on the right edge or right margin):\n   - Vertical rail with labeled steps or dots: \"01 Hello\", \"02 Person\", \"03 Career\", \"04 Skills & AI\", \"05 Contact\".\n   - The SECOND dot / item (\"02 Person\") is clearly ACTIVE with emerald color (#34D399), a subtle outer ring / ping animation indicator, and full visibility. Others are subdued dots with subtle hover states.\n\nVisual Style:\n- Dark theme (slate-900 base, slate-800 surfaces, slate-100 text, emerald-400 accent #34D399).\n- Refined typography with clean hierarchy, precise spacing, and smooth subtle backdrop blur effects.",
+                "screenMetadata": {
+                  "agentType": "PRO_AGENT",
+                  "status": "COMPLETE"
+                },
+                "screenType": "DESIGN",
+                "screenshot": {
+                  "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V_icCT8ZBmm8Wtrb_TjlWsWLS7DUPvHkZTNlAU4161xvQeGFr8FgZsoeJLUH0zACWUSPCrMiMTee3ZF8eezoAPqwi6JGsLAYIg1wfumGtqarUAAPCCYTAMjX5qTwRNseF-98h1ud2BVQa19qdrLyTrH6fBo5dGzjk3XLuJesW02WxorxC44v17G100DS-TpB1h8juwqXUPrcevrQleBjn4MRTCoUZey8KAZDGNBnv2vkxGMQc6SzT9NCo",
+                  "name": "projects/12613721072534802508/files/298a4a10ab3344a29224bff1b9f82286"
+                },
+                "theme": {
+                  "bodyFont": "INTER",
+                  "colorMode": "DARK",
+                  "customColor": "#34D399",
+                  "headlineFont": "INTER",
+                  "labelFont": "INTER",
+                  "overrideNeutralColor": "#0F172A",
+                  "roundness": "ROUND_TWELVE"
+                },
+                "title": "Person Chapter - Scrollytelling",
+                "width": "2560"
+              }
+            ],
+            "theme": {}
+          }
+        },
+        {
+          "text": "Here is the desktop **'Person'** pinned scrollytelling chapter design:\n\n### Design Highlights\n- **Two-Column Pinned Scrollytelling Layout**:\n  - **Left Narrative Column**: Features the chapter intro (*\"Who I am when the laptop closes\"*) and three distinct chronological steps:\n    1. *Mentoring colleagues and interns* (dimmed/subdued state)\n    2. *Video games & interactive storytelling* (**Active Step** highlighted at 100% opacity with an emerald accent border, tags, and active focus badge)\n    3. *Camping and kayaking* (dimmed/upcoming state)\n- **Right Sticky Photo Card**:\n  - Anchored rounded card with a cinematic lifestyle photo, top status indicator (*Active Chapter Visual*), contextual pill (*Current Focus: Video Games & Interactive Storytelling*), and metadata caption details (*Offline Hours · Pacific Northwest*).\n- **Vertical Progress Rail (Right Edge)**:\n  - Scrollytelling rail showing narrative progression across chapters with the **second dot ('02 Person') actively highlighted in emerald** with an accented indicator.\n- **Top Navigation Bar**:\n  - Consistent header showing chapters with \"Person\" in the active state and a \"Resume\" action button."
+        },
+        {
+          "suggestion": "Switch active state to 'Camping and kayaking' to see the outdoor visual card"
+        },
+        {
+          "suggestion": "Add interactive scroll triggers and transition animations"
+        },
+        {
+          "suggestion": "Generate the mobile responsive version of this chapter"
+        }
+      ],
+      "projectId": "12613721072534802508",
+      "sessionId": "11175456438392309534",
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Portfolio Scrollytelling",
+          "theme": {
+            "bodyFont": "INTER",
+            "colorMode": "DARK",
+            "customColor": "#34D399",
+            "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+            "headlineFont": "INTER",
+            "labelFont": "INTER",
+            "overrideNeutralColor": "#0F172A",
+            "roundness": "ROUND_TWELVE"
+          }
+        },
+        "name": "assets/6907210889568670700",
+        "version": "1"
+      },
+      "deviceType": "DESKTOP",
+      "generatedBy": "figaro_agent",
+      "height": "2354",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2ZlNTZlMGY3MGMzYTQ4NzRhYjNmMmFmYmQ4YmJlMjU4EgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12613721072534802508/files/3848f0a76af24414bfec26cb6a1da84d"
+      },
+      "id": "4d7fc374a41d47568705b916bb495a16",
+      "name": "projects/12613721072534802508/screens/4d7fc374a41d47568705b916bb495a16",
+      "prompt": "Create the pinned narrative chapter 'Person' for a developer/designer portfolio in desktop view.\n\nKey specifications and layout:\n1. Top Bar / Header:\n   - Consistent with TopNavBar component: Minimal slate-900/80 background with backdrop blur, subtle border bottom, logo on left, navigation links ('Hello', 'Person', 'Career', 'Skills & AI', 'Contact'), with 'Person' highlighted in emerald accent (#34D399), and a 'Resume' secondary/ghost action button.\n\n2. Main Scrollytelling Two-Column Canvas (Desktop, max-w-7xl mx-auto px-10 py-16 min-h-[calc(100vh-80px)] flex items-start gap-16 relative):\n   - Left Column (Text narrative steps, approx 50-55% width):\n     - Chapter label pill: \"02 / CHAPTER\" with subtle emerald border and badge styling.\n     - Section Title: \"Beyond the Screen: The Person Behind the Code\" or \"Who I am when the laptop closes\".\n     - Three distinct text steps arranged sequentially with clear visual indicators:\n       * Step 1 (Dimmed/Past step, opacity-45):\n         - Number / Tag: \"01 · People & Growth\"\n         - Heading: \"Mentoring colleagues and interns\"\n         - Body: \"Dedicated to lifting others up—running 1:1 design reviews, engineering pair sessions, and building onboarding workshops for junior developers.\"\n       * Step 2 (ACTIVE STEP - Full Opacity 100%, emerald accent indicator or glowing active border highlight, elevated card / distinct visual prominence):\n         - Number / Tag: \"02 · Digital Worlds\"\n         - Heading: \"Video games & interactive storytelling\"\n         - Body: \"Deeply passionate about world-building, thoughtful narrative mechanics, and game design theory. From atmospheric indie adventures to complex tactical sims.\"\n         - Active badges: [\"Narrative Design\", \"Elden Ring & Outer Wilds\", \"Game Jams\"]\n       * Step 3 (Dimmed/Upcoming step, opacity-45):\n         - Number / Tag: \"03 · The Great Outdoors\"\n         - Heading: \"Camping and kayaking\"\n         - Body: \"Disconnecting to reconnect. Navigating winding rivers in a kayak, backcountry trails, and stargazing around off-grid campfires across the Pacific Northwest.\"\n   \n   - Right Column (Sticky photo card, approx 45% width, sticky top-28):\n     - High-craft rounded-2xl or rounded-3xl container with sleek dark slate background, emerald border sheen / ring, and subtle ambient glow.\n     - Profile/Lifestyle photo matching the active chapter theme (a warm, cinematic shot of a designer/developer with ambient lighting or headphones/setup or lifestyle portrait).\n     - Caption and metadata overlay at the bottom:\n       * Pill badge: \"Current Focus: Video Games & Interactive Storytelling\" with a glowing emerald pulse dot.\n       * Caption text: \"Exploring how immersive world mechanics inspire intuitive, tactile digital product interfaces.\"\n       * Location / timestamp or mini stat snippet: \"Offline Hours · Pacific Northwest\".\n\n3. Scrollytelling Progress Rail (Fixed on the right edge or right margin):\n   - Vertical rail with labeled steps or dots: \"01 Hello\", \"02 Person\", \"03 Career\", \"04 Skills & AI\", \"05 Contact\".\n   - The SECOND dot / item (\"02 Person\") is clearly ACTIVE with emerald color (#34D399), a subtle outer ring / ping animation indicator, and full visibility. Others are subdued dots with subtle hover states.\n\nVisual Style:\n- Dark theme (slate-900 base, slate-800 surfaces, slate-100 text, emerald-400 accent #34D399).\n- Refined typography with clean hierarchy, precise spacing, and smooth subtle backdrop blur effects.",
+      "screenMetadata": {
+        "agentType": "PRO_AGENT",
+        "status": "COMPLETE"
+      },
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V_icCT8ZBmm8Wtrb_TjlWsWLS7DUPvHkZTNlAU4161xvQeGFr8FgZsoeJLUH0zACWUSPCrMiMTee3ZF8eezoAPqwi6JGsLAYIg1wfumGtqarUAAPCCYTAMjX5qTwRNseF-98h1ud2BVQa19qdrLyTrH6fBo5dGzjk3XLuJesW02WxorxC44v17G100DS-TpB1h8juwqXUPrcevrQleBjn4MRTCoUZey8KAZDGNBnv2vkxGMQc6SzT9NCo",
+        "name": "projects/12613721072534802508/files/298a4a10ab3344a29224bff1b9f82286"
+      },
+      "theme": {
+        "bodyFont": "INTER",
+        "colorMode": "DARK",
+        "customColor": "#34D399",
+        "headlineFont": "INTER",
+        "labelFont": "INTER",
+        "overrideNeutralColor": "#0F172A",
+        "roundness": "ROUND_TWELVE"
+      },
+      "title": "Person Chapter - Scrollytelling",
+      "width": "2560",
+      "agentText": "Here is the desktop **'Person'** pinned scrollytelling chapter design:\n\n### Design Highlights\n- **Two-Column Pinned Scrollytelling Layout**:\n  - **Left Narrative Column**: Features the chapter intro (*\"Who I am when the laptop closes\"*) and three distinct chronological steps:\n    1. *Mentoring colleagues and interns* (dimmed/subdued state)\n    2. *Video games & interactive storytelling* (**Active Step** highlighted at 100% opacity with an emerald accent border, tags, and active focus badge)\n    3. *Camping and kayaking* (dimmed/upcoming state)\n- **Right Sticky Photo Card**:\n  - Anchored rounded card with a cinematic lifestyle photo, top status indicator (*Active Chapter Visual*), contextual pill (*Current Focus: Video Games & Interactive Storytelling*), and metadata caption details (*Offline Hours · Pacific Northwest*).\n- **Vertical Progress Rail (Right Edge)**:\n  - Scrollytelling rail showing narrative progression across chapters with the **second dot ('02 Person') actively highlighted in emerald** with an accented indicator.\n- **Top Navigation Bar**:\n  - Consistent header showing chapters with \"Person\" in the active state and a \"Resume\" action button.",
+      "suggestions": [
+        "Switch active state to 'Camping and kayaking' to see the outdoor visual card",
+        "Add interactive scroll triggers and transition animations",
+        "Generate the mobile responsive version of this chapter"
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V_icCT8ZBmm8Wtrb_TjlWsWLS7DUPvHkZTNlAU4161xvQeGFr8FgZsoeJLUH0zACWUSPCrMiMTee3ZF8eezoAPqwi6JGsLAYIg1wfumGtqarUAAPCCYTAMjX5qTwRNseF-98h1ud2BVQa19qdrLyTrH6fBo5dGzjk3XLuJesW02WxorxC44v17G100DS-TpB1h8juwqXUPrcevrQleBjn4MRTCoUZey8KAZDGNBnv2vkxGMQc6SzT9NCo"
+    }
+  }
+}

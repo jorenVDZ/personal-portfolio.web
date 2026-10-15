@@ -7,6 +7,7 @@ import { ContactPage } from './pages/contact/contact-page/contact-page';
 import { HomePage } from './pages/home/home-page/home-page';
 import { CareerPage } from './pages/career/career-page/career-page';
 import { SkillsPage } from './pages/skills/skills-page/skills-page';
+import { ProgressRail } from './shared/components/progress-rail/progress-rail';
 import { Navigation } from './shared/components/navigation/navigation';
 import { particlesOptions } from './shared/options/particlesOptions';
 import { Engine } from '@tsparticles/engine';
@@ -21,6 +22,7 @@ import { NgxParticlesModule } from "@tsparticles/angular";
     SkillsPage,
     ContactPage,
     Navigation,
+    ProgressRail,
     NgxParticlesModule
   ],
   templateUrl: './app.html',

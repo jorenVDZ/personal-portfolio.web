@@ -1,33 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { TranslationService } from '../../../shared/services/translation.service';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [
-    TranslatePipe
-  ],
+  imports: [TranslatePipe],
   templateUrl: './contact-page.html',
-  styleUrl: './contact-page.scss'
 })
 export class ContactPage {
-  constructor(private translationService: TranslationService) {}
+  email = 'jorenvanderzande@hotmail.com';
+  private translation = inject(TranslationService);
+  get lang() { return this.translation.getCurrentLanguage(); }
+  copied = signal(false);
 
-  downloadCV(): void {
-    const currentLanguage = this.translationService.getCurrentLanguage();
-    const link = document.createElement('a');
-    link.href = `/assets/cv-${currentLanguage}.pdf`;
-    link.download = `Joren_Vanderzande_CV_${currentLanguage.toUpperCase()}.pdf`;
-    link.click();
+  copy() {
+    navigator.clipboard.writeText(this.email);
+    this.copied.set(true);
+    setTimeout(() => this.copied.set(false), 2000);
   }
-
-  openEmail(): void {
-    const email = 'joren.vanderzande@gmail.com';
-    window.location.href = `mailto:${email}`;
-  }
-
-  openLinkedIn(): void {
-    const linkedinUrl = 'https://www.linkedin.com/in/joren-vanderzande-b9a931175';
-    window.open(linkedinUrl, '_blank');
-  }
+  go(id: string) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }); }
 }

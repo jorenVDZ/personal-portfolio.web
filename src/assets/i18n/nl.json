@@ -1,14 +1,20 @@
 {
   "navigation": {
-    "home": "Startpagina",
-    "about": "Over mij",
-    "skills": "Vaardigheden",
+    "home": "Hallo",
+    "about": "Persoon",
+    "skills": "Vaardigheden & AI",
     "career": "Carrière",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resume": "CV",
+    "getInTouch": "Contacteer mij"
   },
   "home": {
     "title": "Ik ben Joren, een <b>Full-Stack Web Developer</b>,",
-    "subtitle": "Houd van <b>clean code</b>, <b>vloeiende interfaces</b> en <b>soepele pipelines</b>."
+    "subtitle": "Houd van <b>clean code</b>, <b>vloeiende interfaces</b> en <b>soepele pipelines</b>.",
+    "cta1": "Lees mijn verhaal",
+    "cta2": "Neem contact op",
+    "availability": "Beschikbaar voor nieuwe projecten",
+    "stack": "Kerntechnologieën"
   },
   "about": {
     "title": "Over <b>Mij</b>",
@@ -16,9 +22,24 @@
     "skill1": "Passie voor development",
     "skill2": "Creatieve probleemoplosser",
     "skill3": "Teamspeler",
-    "skill4": "Leergierig"
+    "skill4": "Leergierig",
+    "heading": "Wie ik ben als de <b>laptop dicht</b> is.",
+    "intro": "Ik studeerde <b>Toegepaste Informatica</b> aan de <b>Hogeschool PXL</b> en werk momenteel als <b>full-stack .NET developer</b>, met een grote waardering voor <b>frontend development</b>. Ik blijf graag groeien, met een bijzondere interesse in <b>DevOps</b> en <b>softwarearchitectuur</b>.",
+    "s1": {
+      "title": "Collega's en stagiairs mentoren",
+      "text": "Wat ik echt graag doe, is <b>mentoren</b>. Of het nu gaat om het ondersteunen van <b>collega's</b> of het begeleiden van <b>stagiairs</b>, ik haal veel voldoening uit het delen van kennis en het helpen ontwikkelen van anderen."
+    },
+    "s2": {
+      "title": "Games",
+      "text": "Ik speel graag <b>games</b>, van <b>videogames</b> tot <b>Magic: The Gathering</b> met vrienden."
+    },
+    "s3": {
+      "title": "Kamperen en kajakken",
+      "text": "Ik ga graag <b>kamperen</b>. Als ik in de natuur ben, vind ik <b>kajakken</b> heerlijk, het is een fijne manier om tot rust te komen en te genieten van de omgeving."
+    }
   },
   "skills": {
+    "ai": {"subtitle": "Automatisering · Agents · Kritisch denken", "title": "AI & automatisering", "workflow": "Ik heb een volledig geautomatiseerde workflow rond mijn AI-agents gebouwd. Mijn filosofie: als je iets met code kunt automatiseren, moet je dat doen. Scripts zijn goedkoop, herhaalbaar en gokken nooit, dus op de lange termijn besparen ze veel tokens en giswerk.", "community": "Bij <b>Sopra Steria</b> heb ik een <b>AI-community</b> gestart die mensen helpt ontdekken hoe AI <i>hen</i> kan helpen. Onze pijlers:", "p1": "Je agents zo configureren dat ze voor jou werken", "p2": "Een standpunt innemen tegen door AI gegenereerde beelden, video's en stemfragmenten", "p3": "Tips om je kritisch denkvermogen scherp te houden"},
     "title": "Technische Vaardigheden",
     "description": "Een uitgebreid overzicht van de technologieën en tools waarmee ik werk, georganiseerd per categorie en vaardigheidsniveau.",
     "categories": {
@@ -123,13 +144,29 @@
       "company": "Sopra Steria",
       "period": "Juli 2021 - Heden",
       "description": "Werkzaam als full-stack .NET developer, bouw van enterprise applicaties en web oplossingen. Ervaring in het ontwikkelen van schaalbare web applicaties met moderne technologieën zoals Angular, .NET Core en Azure cloud services."
-    }
+    },
+    "present": "Heden",
+    "projectLabel": "Project"
   },
   "contact": {
-    "title": "Neem <b>contact</b> op",
+    "title": "Laten we <b>praten</b>.",
     "description": "Neem contact met me op",
     "email": "E-mail",
     "linkedin": "LinkedIn",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "cvEn": "CV (English)",
+    "cvNl": "CV (Nederlands)",
+    "emailTitle": "Stuur een e-mail",
+    "emailText": "Neem rechtstreeks contact op voor een project, een kans, of gewoon om over tech te praten.",
+    "copy": "Kopieer adres",
+    "copied": "Gekopieerd!",
+    "social": "Online verbinden",
+    "cvTitle": "Curriculum Vitae",
+    "prev": "Vorige: Vaardigheden & AI",
+    "top": "Terug naar boven"
+  },
+  "chapter": {
+    "label": "Hoofdstuk",
+    "step": "Stap"
   }
 }

@@ -1,53 +1,60 @@
-<div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mt-12 mb-12">
-      <h1 class="mb-4"><b>{{ 'skills.title' | translate }}</b></h1>
-      <h3 class="mx-auto">
-        {{ 'skills.description' | translate }}
-      </h3>
+<app-scrolly [count]="categories.length + 1" (activeChange)="i.set($event)">
+  <div head class="mb-6">
+    <span class="pill mb-4">04 / {{ 'chapter.label' | translate }}</span>
+    <h1>{{ 'skills.title' | translate }}</h1>
+  </div>
+  @for (c of categories; track c.key; let n = $index) {
+    <section class="step !py-3" [class.is-active]="i() === n">
+      <span class="dot"></span>
+      <p class="label !text-slate-300">0{{ n + 1 }}</p>
+      <h3 class="!mt-1">{{ 'skills.categories.' + c.key | translate }}</h3>
+      <div class="step-body">
+        <p class="mt-2">{{ names(c.key) }}</p>
+        <div class="lg:hidden mt-4"><ng-container *ngTemplateOutlet="logos; context: { $implicit: c.key }" /></div>
+      </div>
+    </section>
+  }
+  <section class="step !py-3" [class.is-active]="i() === categories.length">
+    <span class="dot"></span>
+    <p class="label !text-slate-300">0{{ categories.length + 1 }}</p>
+    <h3 class="!mt-1">{{ 'skills.ai.title' | translate }}</h3>
+    <div class="step-body">
+      <p class="mt-2">{{ 'skills.ai.subtitle' | translate }}</p>
+      <div class="lg:hidden mt-4"><ng-container *ngTemplateOutlet="ai" /></div>
     </div>
+  </section>
 
-    <div class="space-y-12">
-      @for (category of categoryOrder; track category) {
-        <div class="bg-gray-900/80 backdrop-blur-sm rounded-lg shadow-lg p-8">
-          <div class="mb-8">
-            <h2 class="text-2xl font-semibold text-white mb-2">{{ categoryLabels[category] | translate }}</h2>
-            <div class="h-1 w-20 bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 rounded-full"></div>
-          </div>
+  <div panel>
+    @if (i() < categories.length) {
+      <ng-container *ngTemplateOutlet="logos; context: { $implicit: categories[i()].key }" />
+    } @else {
+      <ng-container *ngTemplateOutlet="ai" />
+    }
+  </div>
+</app-scrolly>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            @for (tech of technologiesGrouped[category]; track tech.name) {
-              <div class="group relative bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 hover:shadow-md transition-all duration-200 border border-white/20 tech-card"
-                   [pTooltip]="getTooltipTranslationKey(tech) | translate"
-                   tooltipPosition="top"
-                   [showDelay]="300"
-                   [hideDelay]="100">
-
-                <div class="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-white rounded-full shadow-sm group-hover:shadow-md transition-shadow duration-200 tech-icon">
-                  <img
-                    [src]="tech.icon"
-                    [alt]="tech.name + ' icon'"
-                    class="w-12 h-12 object-contain"
-                    onerror="this.src='assets/favicon.svg'"
-                  />
-                </div>
-
-                <h3 class="text-lg font-semibold text-white text-center mb-3">{{ tech.name }}</h3>
-
-                <div class="flex justify-center">
-                  <span
-                    class="px-3 py-1 text-xs font-medium rounded-full {{ getProficiencyColor(tech.proficiency) }}"
-                  >
-                    {{ getProficiencyTranslationKey(tech.proficiency) | translate }}
-                  </span>
-                </div>
-
-                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-600/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-              </div>
-            }
-          </div>
+<ng-template #logos let-key>
+  <div class="card-flat p-6">
+    <p class="label mb-4">{{ 'skills.categories.' + key | translate }}</p>
+    <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+      @for (t of techOf(key); track t.name) {
+        <div class="flex flex-col items-center gap-2 text-center text-xs text-slate-300 p-2 rounded-lg border border-slate-700">
+          <img [src]="t.icon" [alt]="t.name" class="w-10 h-10 object-contain">{{ t.name }}
         </div>
       }
     </div>
   </div>
-</div>
+</ng-template>
+
+<ng-template #ai>
+  <div class="card-flat p-6">
+    <p class="label mb-4">{{ 'skills.ai.title' | translate }}</p>
+    <p>{{ 'skills.ai.workflow' | translate }}</p>
+    <p class="mt-3" [innerHTML]="'skills.ai.community' | translate"></p>
+    <ul class="mt-3 list-disc pl-5 flex flex-col gap-1 text-slate-300">
+      <li>{{ 'skills.ai.p1' | translate }}</li>
+      <li>{{ 'skills.ai.p2' | translate }}</li>
+      <li>{{ 'skills.ai.p3' | translate }}</li>
+    </ul>
+  </div>
+</ng-template>

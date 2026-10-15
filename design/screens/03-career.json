@@ -1,0 +1,148 @@
+{
+  "success": true,
+  "data": {
+    "resource": "screen",
+    "id": "a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+    "project": "12613721072534802508",
+    "title": "Career - Scrollytelling Timeline",
+    "device": "DESKTOP",
+    "screenType": "DESIGN",
+    "canvasUrl": "https://stitch.google.com/projects/12613721072534802508?node-id=a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+    "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XL0zRVxS98YhMY_CHj9zo_U6OE8Lvgh6hZ0Sr7pNtwpZMu60uL_8e9pAg1-ELM1fP_YuVytnbIK8nBorj1kXalFdi4QINWHgajbGN3JbIzrEOzG3CziXfxZUH7pPN-82VjcuwgnlTKglstfaa2ENSEXX9tkJHwTmFPjA7FQ7PkD3UIcZoYbVAgge_KRkH4Kn5N3UKfwDjgxtV-rEbn2GuCawplo7PR6nIxGYTaULQrum30BNG8LMwtaHM",
+    "htmlCode": {
+      "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFiOTlhNTg0OWUzZjRkYjA4MjIyNWZiZTIwZjNmMGFjEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+      "mimeType": "text/html",
+      "name": "projects/12613721072534802508/files/ab0de1d5f0ac46febdf39f2699aaead9"
+    },
+    "rawScreen": {
+      "outputComponents": [
+        {
+          "design": {
+            "screens": [
+              {
+                "designSystem": {
+                  "designSystem": {
+                    "displayName": "Portfolio Scrollytelling",
+                    "theme": {
+                      "bodyFont": "INTER",
+                      "colorMode": "DARK",
+                      "customColor": "#34D399",
+                      "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+                      "headlineFont": "INTER",
+                      "labelFont": "INTER",
+                      "overrideNeutralColor": "#0F172A",
+                      "roundness": "ROUND_TWELVE"
+                    }
+                  },
+                  "name": "assets/6907210889568670700",
+                  "version": "1"
+                },
+                "deviceType": "DESKTOP",
+                "generatedBy": "figaro_agent",
+                "height": "4542",
+                "htmlCode": {
+                  "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFiOTlhNTg0OWUzZjRkYjA4MjIyNWZiZTIwZjNmMGFjEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+                  "mimeType": "text/html",
+                  "name": "projects/12613721072534802508/files/ab0de1d5f0ac46febdf39f2699aaead9"
+                },
+                "id": "a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+                "name": "projects/12613721072534802508/screens/a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+                "prompt": "Desktop two-column pinned narrative chapter 'Career' scrollytelling timeline page. Dark slate theme (#0f172a / slate-900 background) with luminous emerald (#34D399 / emerald-400) accents.\n\nTopNavBar at the top with navigation links: 'Hello', 'Person', 'Career' (marked active with emerald accent), 'Skills + AI', 'Contact', and a 'Resume' action button.\n\nRight-side floating progress rail (SideNavBar) fixed on the right displaying the 5 scrollytelling chapters:\n1. 01 Hello\n2. 02 Person\n3. 03 Career (ACTIVE step, checked/highlighted emerald dot indicator and glowing emerald text)\n4. 04 Skills + AI\n5. 05 Contact\n\nMain Two-Column Layout (Pinned narrative chapter layout):\n- Chapter header badge: '03 // EXPERIENCE & JOURNEY' in monospace uppercase tracking-wider text with emerald pill indicator. Large display title 'Career Odyssey' or 'The Trajectory', with subtitle describing the evolution from academic foundation to senior engineering leadership.\n\n- Left Column (Vertical Timeline):\n  A clean, elegant vertical timeline running down the column with connected vertical track lines.\n  Step 1: PXL University College - Applied Computer Science (Software Engineering degree), foundation in algorithms, systems & software architecture.\n  Step 2: Full-Stack Software Engineer at TechScale / Digital Agency - Building high-traffic distributed web platforms and cloud microservices.\n  Step 3 (ACTIVE STEP - highlighted with glowing emerald marker / pill badge, ring-4 ring-emerald-500/20 border-emerald-400 bg-slate-800/80 card, active beacon pulse): Senior Staff / Lead Frontend Architect at Nova Systems - Leading core design system architecture, scrollytelling interactive products, and AI integration.\n  Step 4: Principal AI Interface Engineer / Design Engineer - Pioneering next-gen human-AI canvas interfaces and agentic workflows.\n  Step 5: Independent Tech Advisor & OSS Contributor.\n\n- Right Column (Sticky Spotlight Card):\n  Sticky top-28 panel pinned alongside the timeline that corresponds specifically to the ACTIVE step (Step 3: Nova Systems - Senior Staff / Lead Frontend Architect):\n  - Company emblem / icon and name: Nova Systems\n  - Role badge & Title: Lead Frontend Architect\n  - Period & Location: 2021 – Present • San Francisco / Remote\n  - Executive Overview: Deep narrative dive into achievements, leading the next-gen web platform, reducing latency by 42%, and driving the AI-first canvas transformation.\n  - Key Impact Metrics: 3 stats cards in emerald grid (e.g., 42% Performance Boost, 140K+ Weekly Devs, 99.98% Uptime).\n  - Technology Stack Chips: Pill tags with technology logos/names (TypeScript, React 19, Tailwind CSS, WebGL, Next.js, Node.js, GraphQL, Python, Docker).\n  - Action link / secondary button: 'View Case Study & Artifacts' with external link arrow icon.\n\nPolished styling: deep slate-950 backdrop, subtle glassmorphism borders (slate-800), emerald-400 highlights, glowing status badges, refined typography, and restrained modern developer portfolio aesthetics.",
+                "screenMetadata": {
+                  "agentType": "PRO_AGENT",
+                  "status": "COMPLETE"
+                },
+                "screenType": "DESIGN",
+                "screenshot": {
+                  "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XL0zRVxS98YhMY_CHj9zo_U6OE8Lvgh6hZ0Sr7pNtwpZMu60uL_8e9pAg1-ELM1fP_YuVytnbIK8nBorj1kXalFdi4QINWHgajbGN3JbIzrEOzG3CziXfxZUH7pPN-82VjcuwgnlTKglstfaa2ENSEXX9tkJHwTmFPjA7FQ7PkD3UIcZoYbVAgge_KRkH4Kn5N3UKfwDjgxtV-rEbn2GuCawplo7PR6nIxGYTaULQrum30BNG8LMwtaHM",
+                  "name": "projects/12613721072534802508/files/69f0e3a86e3f4677860c414bc77b545c"
+                },
+                "theme": {
+                  "bodyFont": "INTER",
+                  "colorMode": "DARK",
+                  "customColor": "#34D399",
+                  "headlineFont": "INTER",
+                  "labelFont": "INTER",
+                  "overrideNeutralColor": "#0F172A",
+                  "roundness": "ROUND_TWELVE"
+                },
+                "title": "Career - Scrollytelling Timeline",
+                "width": "2560"
+              }
+            ],
+            "theme": {}
+          }
+        },
+        {
+          "text": "I've designed the **Career** scrollytelling timeline screen for your portfolio on desktop, perfectly aligned with the dark slate and emerald design system.\n\n### Key Highlights:\n1. **Pinned Chapter Header & Navigation**:\n   - Clean top navigation with the `Career` section active.\n   - Pinned scrollytelling progress rail on the right highlighting **Chapter 03 (Career)** with an emerald active indicator.\n\n2. **Left Column — Interactive Vertical Timeline**:\n   - Begins with foundational education at **PXL University College** (Applied Computer Science / Software Engineering).\n   - Follows consecutive career milestones with connected vertical timeline tracks.\n   - **Active Step Highlight**: Lead Frontend Architect at Nova Systems is prominently accentuated with a luminous emerald status badge, illuminated timeline node, and emerald border focus ring.\n\n3. **Right Column — Sticky Spotlight Card**:\n   - Stays pinned alongside the timeline to detail the active role at **Nova Systems**.\n   - Displays role title, tenure (`2021 – Present`), location, executive summary, and key impact metric cards.\n   - Includes technology stack chips (TypeScript, React 19, Tailwind CSS, WebGL, Next.js, Node.js, GraphQL, Python, Docker) and a case study CTA."
+        },
+        {
+          "suggestion": "Add interactive hover/click states so clicking another timeline step switches the sticky card"
+        },
+        {
+          "suggestion": "Add smooth scroll-driven animations with CSS and subtle motion transitions"
+        },
+        {
+          "suggestion": "Design the mobile responsive version of this Career timeline screen"
+        }
+      ],
+      "projectId": "12613721072534802508",
+      "sessionId": "14532378711236294640",
+      "designSystem": {
+        "designSystem": {
+          "displayName": "Portfolio Scrollytelling",
+          "theme": {
+            "bodyFont": "INTER",
+            "colorMode": "DARK",
+            "customColor": "#34D399",
+            "designMd": "# Portfolio Scrollytelling Design System\n\nPolished, professional dark UI. Calm reveals, restrained motion, content first.\nCarries over the current site look: slate background, emerald accent.\n\n## Colors\n| Role | Hex |\n|---|---|\n| Background | #0F172A (slate-900) |\n| Background deep | #020617 (slate-950) |\n| Surface / card | #1E293B (slate-800) |\n| Border | #334155 (slate-700) |\n| Text | #F1F5F9 |\n| Muted text | #CBD5E1 |\n| Accent (emerald) | #34D399 -> #059669 gradient, used for highlighted words and the active progress dot |\n\n## Typography\nInter. H1 56px/1.2, H2 32px/1.3, body 18px/1.6, labels 12px uppercase tracking-wide. Highlighted words (`<b>`) use the emerald gradient.\n\n## Shape and spacing\nRadius 12px. 8px spacing grid. Thin 1px borders, soft shadows, no glows.\n\n## Layout and motion\n- Desktop: two columns. Text steps scroll on the left, the visual stays pinned on the right (sticky, 100svh).\n- Mobile: stacked, no pinning, visual sits inline above each step.\n- Slim progress rail on the right edge: one dot per chapter, active dot is emerald, labels on hover. Becomes a top progress bar on mobile.\n- Starfield particles stay as the fixed backdrop.\n- Motion: fades and small translates under 0.5s; inactive steps at 25% opacity. All motion off under prefers-reduced-motion.\n\n## Chapters\n1. Hello: name, role, tagline.\n2. Person: hobbies (video games, camping, kayaking) and mentoring. Photos on the sticky panel.\n3. Career: pinned timeline. Each step swaps the sticky card (company, role, period, stack).\n4. Skills + AI: steps through Frontend, Backend, Cloud and DevOps, Testing, then \"How I work with AI\". Sticky panel shows tech logos, then an AI workflow diagram.\n5. Contact: links and CV downloads.\n",
+            "headlineFont": "INTER",
+            "labelFont": "INTER",
+            "overrideNeutralColor": "#0F172A",
+            "roundness": "ROUND_TWELVE"
+          }
+        },
+        "name": "assets/6907210889568670700",
+        "version": "1"
+      },
+      "deviceType": "DESKTOP",
+      "generatedBy": "figaro_agent",
+      "height": "4542",
+      "htmlCode": {
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFiOTlhNTg0OWUzZjRkYjA4MjIyNWZiZTIwZjNmMGFjEgsSBxDPi-KJqAkYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjYxMzcyMTA3MjUzNDgwMjUwOA&filename=&opi=96797242",
+        "mimeType": "text/html",
+        "name": "projects/12613721072534802508/files/ab0de1d5f0ac46febdf39f2699aaead9"
+      },
+      "id": "a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+      "name": "projects/12613721072534802508/screens/a8ff4fb697ea4cf1a9eeeef9bbfd52bf",
+      "prompt": "Desktop two-column pinned narrative chapter 'Career' scrollytelling timeline page. Dark slate theme (#0f172a / slate-900 background) with luminous emerald (#34D399 / emerald-400) accents.\n\nTopNavBar at the top with navigation links: 'Hello', 'Person', 'Career' (marked active with emerald accent), 'Skills + AI', 'Contact', and a 'Resume' action button.\n\nRight-side floating progress rail (SideNavBar) fixed on the right displaying the 5 scrollytelling chapters:\n1. 01 Hello\n2. 02 Person\n3. 03 Career (ACTIVE step, checked/highlighted emerald dot indicator and glowing emerald text)\n4. 04 Skills + AI\n5. 05 Contact\n\nMain Two-Column Layout (Pinned narrative chapter layout):\n- Chapter header badge: '03 // EXPERIENCE & JOURNEY' in monospace uppercase tracking-wider text with emerald pill indicator. Large display title 'Career Odyssey' or 'The Trajectory', with subtitle describing the evolution from academic foundation to senior engineering leadership.\n\n- Left Column (Vertical Timeline):\n  A clean, elegant vertical timeline running down the column with connected vertical track lines.\n  Step 1: PXL University College - Applied Computer Science (Software Engineering degree), foundation in algorithms, systems & software architecture.\n  Step 2: Full-Stack Software Engineer at TechScale / Digital Agency - Building high-traffic distributed web platforms and cloud microservices.\n  Step 3 (ACTIVE STEP - highlighted with glowing emerald marker / pill badge, ring-4 ring-emerald-500/20 border-emerald-400 bg-slate-800/80 card, active beacon pulse): Senior Staff / Lead Frontend Architect at Nova Systems - Leading core design system architecture, scrollytelling interactive products, and AI integration.\n  Step 4: Principal AI Interface Engineer / Design Engineer - Pioneering next-gen human-AI canvas interfaces and agentic workflows.\n  Step 5: Independent Tech Advisor & OSS Contributor.\n\n- Right Column (Sticky Spotlight Card):\n  Sticky top-28 panel pinned alongside the timeline that corresponds specifically to the ACTIVE step (Step 3: Nova Systems - Senior Staff / Lead Frontend Architect):\n  - Company emblem / icon and name: Nova Systems\n  - Role badge & Title: Lead Frontend Architect\n  - Period & Location: 2021 – Present • San Francisco / Remote\n  - Executive Overview: Deep narrative dive into achievements, leading the next-gen web platform, reducing latency by 42%, and driving the AI-first canvas transformation.\n  - Key Impact Metrics: 3 stats cards in emerald grid (e.g., 42% Performance Boost, 140K+ Weekly Devs, 99.98% Uptime).\n  - Technology Stack Chips: Pill tags with technology logos/names (TypeScript, React 19, Tailwind CSS, WebGL, Next.js, Node.js, GraphQL, Python, Docker).\n  - Action link / secondary button: 'View Case Study & Artifacts' with external link arrow icon.\n\nPolished styling: deep slate-950 backdrop, subtle glassmorphism borders (slate-800), emerald-400 highlights, glowing status badges, refined typography, and restrained modern developer portfolio aesthetics.",
+      "screenMetadata": {
+        "agentType": "PRO_AGENT",
+        "status": "COMPLETE"
+      },
+      "screenType": "DESIGN",
+      "screenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XL0zRVxS98YhMY_CHj9zo_U6OE8Lvgh6hZ0Sr7pNtwpZMu60uL_8e9pAg1-ELM1fP_YuVytnbIK8nBorj1kXalFdi4QINWHgajbGN3JbIzrEOzG3CziXfxZUH7pPN-82VjcuwgnlTKglstfaa2ENSEXX9tkJHwTmFPjA7FQ7PkD3UIcZoYbVAgge_KRkH4Kn5N3UKfwDjgxtV-rEbn2GuCawplo7PR6nIxGYTaULQrum30BNG8LMwtaHM",
+        "name": "projects/12613721072534802508/files/69f0e3a86e3f4677860c414bc77b545c"
+      },
+      "theme": {
+        "bodyFont": "INTER",
+        "colorMode": "DARK",
+        "customColor": "#34D399",
+        "headlineFont": "INTER",
+        "labelFont": "INTER",
+        "overrideNeutralColor": "#0F172A",
+        "roundness": "ROUND_TWELVE"
+      },
+      "title": "Career - Scrollytelling Timeline",
+      "width": "2560",
+      "agentText": "I've designed the **Career** scrollytelling timeline screen for your portfolio on desktop, perfectly aligned with the dark slate and emerald design system.\n\n### Key Highlights:\n1. **Pinned Chapter Header & Navigation**:\n   - Clean top navigation with the `Career` section active.\n   - Pinned scrollytelling progress rail on the right highlighting **Chapter 03 (Career)** with an emerald active indicator.\n\n2. **Left Column — Interactive Vertical Timeline**:\n   - Begins with foundational education at **PXL University College** (Applied Computer Science / Software Engineering).\n   - Follows consecutive career milestones with connected vertical timeline tracks.\n   - **Active Step Highlight**: Lead Frontend Architect at Nova Systems is prominently accentuated with a luminous emerald status badge, illuminated timeline node, and emerald border focus ring.\n\n3. **Right Column — Sticky Spotlight Card**:\n   - Stays pinned alongside the timeline to detail the active role at **Nova Systems**.\n   - Displays role title, tenure (`2021 – Present`), location, executive summary, and key impact metric cards.\n   - Includes technology stack chips (TypeScript, React 19, Tailwind CSS, WebGL, Next.js, Node.js, GraphQL, Python, Docker) and a case study CTA.",
+      "suggestions": [
+        "Add interactive hover/click states so clicking another timeline step switches the sticky card",
+        "Add smooth scroll-driven animations with CSS and subtle motion transitions",
+        "Design the mobile responsive version of this Career timeline screen"
+      ],
+      "imageUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XL0zRVxS98YhMY_CHj9zo_U6OE8Lvgh6hZ0Sr7pNtwpZMu60uL_8e9pAg1-ELM1fP_YuVytnbIK8nBorj1kXalFdi4QINWHgajbGN3JbIzrEOzG3CziXfxZUH7pPN-82VjcuwgnlTKglstfaa2ENSEXX9tkJHwTmFPjA7FQ7PkD3UIcZoYbVAgge_KRkH4Kn5N3UKfwDjgxtV-rEbn2GuCawplo7PR6nIxGYTaULQrum30BNG8LMwtaHM"
+    }
+  }
+}

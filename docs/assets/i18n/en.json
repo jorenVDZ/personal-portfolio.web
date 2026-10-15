@@ -1,14 +1,20 @@
 {
   "navigation": {
-    "home": "Home",
-    "about": "About",
-    "skills": "Skills",
+    "home": "Hello",
+    "about": "Person",
+    "skills": "Skills & AI",
     "career": "Career",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resume": "Resume",
+    "getInTouch": "Get in touch"
   },
   "home": {
     "title": "I'm Joren, a <b>Full-Stack Web Developer</b>,",
-    "subtitle": "Loves <b>clean code</b>, <b>smooth interfaces</b>, and <b>well-oiled pipelines</b>."
+    "subtitle": "Loves <b>clean code</b>, <b>smooth interfaces</b>, and <b>well-oiled pipelines</b>.",
+    "cta1": "Read my story",
+    "cta2": "Get in touch",
+    "availability": "Available for new projects",
+    "stack": "Core engineering stack"
   },
   "about": {
     "title": "About <b>Me</b>",
@@ -16,9 +22,24 @@
     "skill1": "Passionate Developer",
     "skill2": "Creative Problem Solver",
     "skill3": "Team Collaborator",
-    "skill4": "Continuous Learner"
+    "skill4": "Continuous Learner",
+    "heading": "Who I am when the <b>laptop closes</b>.",
+    "intro": "I studied <b>Applied Information Science</b> at <b>PXL University College</b> and currently work as a <b>full-stack .NET developer</b>, with a strong liking for <b>frontend development</b>. I'm always looking to grow, with a special interest in <b>DevOps</b> and <b>software architecture</b>.",
+    "s1": {
+      "title": "Mentoring colleagues and interns",
+      "text": "Something I truly enjoy is <b>mentoring</b>. Whether I'm supporting <b>colleagues</b> or guiding <b>interns</b>, I find it rewarding to share knowledge and help others develop their skills."
+    },
+    "s2": {
+      "title": "Games",
+      "text": "I enjoy <b>playing games</b>, from <b>video games</b> to <b>Magic: The Gathering</b> with friends."
+    },
+    "s3": {
+      "title": "Camping and kayaking",
+      "text": "I like <b>going camping</b>. When I'm outdoors, I really enjoy <b>kayaking</b>, it's a great way to relax and enjoy nature."
+    }
   },
   "skills": {
+    "ai": {"subtitle": "Automation · Agents · Critical thinking", "title": "AI & automation", "workflow": "I built a fully automated workflow around my AI agents. My philosophy: if you can automate it with code, you should. Scripts are cheap, repeatable and never guess, so in the long run they save a lot of tokens and guesswork.", "community": "At <b>Sopra Steria</b> I started an <b>AI community</b> that helps people figure out how AI can help <i>them</i>. Our pillars:", "p1": "Configuring your agents so they work for you", "p2": "Speaking up against AI-generated images, videos and voice fragments", "p3": "Tips to keep your critical thinking skills alive"},
     "title": "Technical Skills",
     "description": "A comprehensive overview of the technologies and tools I work with, organized by category and proficiency level.",
     "categories": {
@@ -123,13 +144,29 @@
       "company": "Sopra Steria",
       "period": "July 2021 - Present",
       "description": "Working as a full-stack .NET developer, building enterprise applications and web solutions. Experienced in developing scalable web applications using modern technologies like Angular, .NET Core, and Azure cloud services."
-    }
+    },
+    "present": "Present",
+    "projectLabel": "Project"
   },
   "contact": {
-    "title": "Contact <b>Me</b>",
+    "title": "Let's <b>talk</b>.",
     "description": "Get in touch with me",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "cvEn": "CV (English)",
+    "cvNl": "CV (Nederlands)",
+    "emailTitle": "Send an Email",
+    "emailText": "Reach out directly for a project, an opportunity, or just to chat about tech.",
+    "copy": "Copy address",
+    "copied": "Copied!",
+    "social": "Connect online",
+    "cvTitle": "Curriculum Vitae",
+    "prev": "Previous: Skills & AI",
+    "top": "Back to start"
+  },
+  "chapter": {
+    "label": "Chapter",
+    "step": "Step"
   }
 }

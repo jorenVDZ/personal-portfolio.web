@@ -1,8 +1,15 @@
-<div class="relative w-full h-screen overflow-hidden home-container">
-  <div class="relative w-full h-full flex items-center justify-center">
-    <div class="text-center">
-      <h1 [innerHTML]="'home.title' | translate"></h1>
-      <h2 [innerHTML]="'home.subtitle' | translate"></h2>
+<div class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16">
+  <span class="pill mb-8">{{ 'home.availability' | translate }}</span>
+  <h1 class="max-w-4xl" [innerHTML]="'home.title' | translate"></h1>
+  <h2 class="max-w-2xl" [innerHTML]="'home.subtitle' | translate"></h2>
+  <div class="flex flex-wrap justify-center gap-4 mt-8">
+    <button type="button" (click)="go('career')" class="btn-primary">{{ 'navigation.career' | translate }} <i class="pi pi-arrow-up-right" aria-hidden="true"></i></button>
+    <button type="button" (click)="go('about')" class="btn-outline">{{ 'home.cta1' | translate }}</button>
+  </div>
+  <div class="mt-14">
+    <p class="label !text-slate-300 mb-3">{{ 'home.stack' | translate }}</p>
+    <div class="flex flex-wrap justify-center gap-2 max-w-2xl">
+      @for (t of stack; track t) { <span class="chip"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>{{ t }}</span> }
     </div>
   </div>
 </div>
